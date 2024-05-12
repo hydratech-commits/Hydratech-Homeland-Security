@@ -51,9 +51,7 @@ function About() {
               Codsoft Technologies
             </h3>
             <span className=" mx-auto px-8 py-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              soluta similique eveniet recusandae temporibus numquam magnam
-              beatae natus
+              Working as a ReactJS developer.
             </span>
           </div>
           <div className="sm:ml-4 ml-2 relative mt-5">
