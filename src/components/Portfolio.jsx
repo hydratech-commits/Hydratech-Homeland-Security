@@ -2,6 +2,7 @@ import React from "react";
 import KeyMason from "../assets/KeyMason.png";
 import DevFolio from "../assets/devfolio.png";
 import TaskTrek from "../assets/tasktrek.png";
+import Weather from "../assets/weather.png";
 
 function Portfolio() {
   return (
@@ -90,22 +91,23 @@ function Portfolio() {
           </div>
         </div>
         <div className="border border-lime-400 hover:shadow-lime-400 hover:shadow-md duration-500 hover:cursor-pointer  rounded-md p-5">
-          <img src={KeyMason} alt="" />
+          <img src={Weather} alt="" />
           <h3 className="text-lg font-semibold mt-5">
-            KeyMason: A Password Generator App
+            Weather Sphere: A Weather forcasting app.
           </h3>
           <p className="text-gray-400 text-sm mt-2">
-            A random password generator app to secure your data, accounts etc
+            Stay informed with real-time weather updates and forecasts with our
+            intuitive weather app
           </p>
           <div className="flex justify-evenly mt-8">
             <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-lime-400 to-cyan-400 hover:text-black duration-200 hover:opacity-50 rounded-full">
-              <a href="https://keymason.netlify.app/" target="blank">
+              <a href="https://weatherspheree.netlify.app/" target="blank">
                 Live Preview
               </a>
             </button>
             <button className="sm:px-6 px-3 py-2 border rounded-full hover:border-red-500">
               <a
-                href="https://github.com/sourcebykhalid/KeyMason-A-Password-Generator-App"
+                href="https://github.com/sourcebykhalid/WeatherSphere"
                 target="blank"
               >
                 Checkout Github
