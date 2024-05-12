@@ -44,9 +44,10 @@ function Portfolio() {
             DevFolio: A Personal Portfolio Website
           </h3>
           <p className="text-gray-400 text-sm mt-2">
-            A Personal portfolio website giving my introduction to people,
-            showcasing my skills, and presenting my endeavours which i have
-            achieved so far.
+            A Personal portfolio website giving my introduction. Embarking on a
+            journey of continuous improvement, this React-powered portfolio
+            serves as my canvas for honing web development skills. Stay tuned as
+            I refine and enhance its design and functionality.
           </p>
           <div className="flex justify-evenly mt-3">
             <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-lime-400 to-cyan-400 hover:text-black duration-200 hover:opacity-50 rounded-full">

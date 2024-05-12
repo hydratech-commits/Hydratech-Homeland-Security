@@ -51,7 +51,8 @@ function About() {
               Codsoft Technologies
             </h3>
             <span className=" mx-auto px-8 py-3">
-              Working as a ReactJS developer.
+              Diving deep into the world of React development as an intern,
+              eager to learn, grow, and contribute to cutting-edge projects
             </span>
           </div>
           <div className="sm:ml-4 ml-2 relative mt-5">
@@ -68,9 +69,9 @@ function About() {
               Oasis Infobyte
             </h3>
             <span className="ml-8 mx-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              soluta similique eveniet recusandae temporibus numquam magnam
-              beatae natus
+              Successfully completed a dynamic web development internship,
+              delivering three projects powered by React, Tailwind CSS, and
+              advanced state management.
             </span>
           </div>
           <div className="sm:ml-4 ml-2 relative mt-5">
@@ -86,9 +87,8 @@ function About() {
               Punjab Technical University
             </h3>
             <span className=" ml-8 mx-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              soluta similique eveniet recusandae temporibus numquam magnam
-              beatae natus
+              Graduated from Punjab Technical University in Electronics &
+              Communication Engineering.
             </span>
           </div>
         </div>
