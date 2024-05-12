@@ -1,0 +1,19 @@
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 10%;
+  }
+  50% {
+    opacity: 40%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  display: inline-block;
+  border-right: 2px solid white;
+  overflow: hidden;
+  animation: typing 2.5s steps(40) infinite;
+}
