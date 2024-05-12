@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        parl: 'url("./framer5.jpg")',
+        parl: 'url("./Framer.jpg")',
       },
 
       keyframes: {
