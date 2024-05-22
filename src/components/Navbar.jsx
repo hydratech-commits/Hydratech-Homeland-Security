@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
-import Resume from "../assets/UpgradedCV.pdf";
+import Resume from "../assets/latest.pdf";
 
 function Navbar() {
   return (
