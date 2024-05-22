@@ -1,12 +1,12 @@
 import { transform } from "framer-motion";
-
+import Framer from "./src/assets/framer";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       backgroundImage: {
-        parl: 'url("./Framer.jpg")',
+        parl: 'url("./assets/Framer.jpg")',
       },
 
       keyframes: {

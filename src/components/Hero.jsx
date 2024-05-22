@@ -43,7 +43,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="relative bg-fixed bg-red-200 bg-cover bg-opacity-85 h-screen w-full"
+      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 h-screen w-full"
     >
       {circles}
       <div className="flex flex-col sm:flex-row justify-center items-center md:p-3 mt-16 sm:mt-2 ">
