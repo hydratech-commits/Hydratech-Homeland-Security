@@ -102,13 +102,13 @@ function Portfolio() {
           </p>
           <div className="flex justify-evenly mt-8">
             <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-lime-400 to-cyan-400 hover:text-black duration-200 hover:opacity-50 rounded-full">
-              <a href="https://weatherspheree.netlify.app/" target="blank">
+              <a href="https://weather-sphere-two.vercel.app/" target="blank">
                 Live Preview
               </a>
             </button>
             <button className="sm:px-6 px-3 py-2 border rounded-full hover:border-red-500">
               <a
-                href="https://github.com/sourcebykhalid/WeatherSphere"
+                href="https://github.com/sourcebykhalid/weather-sphere/tree/master"
                 target="blank"
               >
                 Checkout Github
