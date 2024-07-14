@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "./Reveal";
 
 function About() {
   return (
@@ -19,79 +20,85 @@ function About() {
           ></path>
         </svg>
       </div>
-      <div className="px-4 ">
-        <h2 className="sm:text-4xl font-bold sm:ml-40 ml-8 bg-black px-2 py-1 w-fit rounded-sm text-gray-400 shadow-md shadow-lime-500">
-          About me
-        </h2>
-      </div>
+      <Reveal>
+        <div className="px-4 ">
+          <h2 className="sm:text-4xl font-bold sm:ml-40 ml-8 bg-black px-2 py-1 w-fit rounded-sm text-gray-400 shadow-md shadow-lime-500">
+            About me
+          </h2>
+        </div>
+      </Reveal>
       <div className="mt-3">
-        <div className=" sm:p-12 px-6 sm:px-36 font-semibold mb-8  ">
-          <span>
-            🎨 Frontend enthusiast with a knack for blending creativity with
-            code. Specializing in ReactJS, Redux, JavaScript, Tailwind CSS, and
-            more, I bring ideas to life through intuitive user interfaces and
-            elegant designs. Let&apos;s collaborate and create something
-            extraordinary together!
-          </span>
-        </div>
-        <div className=" flex flex-col relative before:absolute before:top-2 before:left-0 before:bottom-0 before:w-2 before:bg-gray-600 before:rounded-full sm:ml-32 ml-1">
-          <div className="sm:ml-4 ml-2 relative ">
-            <h3 className=" font-bold absolute text-xl -left-20 translate-y-1">
-              2024
-            </h3>
+        <Reveal>
+          <div className=" sm:p-12 px-6 sm:px-36 font-semibold mb-8  ">
+            <span>
+              🎨 Frontend enthusiast with a knack for blending creativity with
+              code. Specializing in ReactJS, Redux, JavaScript, Tailwind CSS,
+              and more, I bring ideas to life through intuitive user interfaces
+              and elegant designs. Let&apos;s collaborate and create something
+              extraordinary together!
+            </span>
+          </div>
+        </Reveal>
+        <Reveal>
+          <div className=" flex flex-col relative before:absolute before:top-2 before:left-0 before:bottom-0 before:w-2 before:bg-gray-600 before:rounded-full sm:ml-32 ml-1">
+            <div className="sm:ml-4 ml-2 relative ">
+              <h3 className=" font-bold absolute text-xl -left-20 translate-y-1">
+                2024
+              </h3>
 
-            <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-              <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
-              Web Development Intern{" "}
-              <span className="  sm:block sm:text-md text-xs font-semibold">
-                &nbsp; &nbsp;May 2024 - Present
+              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
+                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
+                Web Development Intern{" "}
+                <span className="  sm:block sm:text-md text-xs font-semibold">
+                  &nbsp; &nbsp;May 2024 - Present
+                </span>
+              </h2>
+              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
+                Codsoft Technologies
+              </h3>
+              <span className=" mx-auto px-8 py-3">
+                Diving deep into the world of React development as an intern,
+                eager to learn, grow, and contribute to cutting-edge projects
               </span>
-            </h2>
-            <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-              Codsoft Technologies
-            </h3>
-            <span className=" mx-auto px-8 py-3">
-              Diving deep into the world of React development as an intern,
-              eager to learn, grow, and contribute to cutting-edge projects
-            </span>
-          </div>
-          <div className="sm:ml-4 ml-2 relative mt-5">
-            <h3 className=" font-bold absolute text-xl -left-20">2024</h3>
+            </div>
+            <div className="sm:ml-4 ml-2 relative mt-5">
+              <h3 className=" font-bold absolute text-xl -left-20">2024</h3>
 
-            <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-              <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
-              Web Development Intern{" "}
-              <span className=" sm:block sm:text-md text-xs font-semibold">
-                &nbsp; &nbsp;Apr 2024-May 2024
+              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
+                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
+                Web Development Intern{" "}
+                <span className=" sm:block sm:text-md text-xs font-semibold">
+                  &nbsp; &nbsp;Apr 2024-May 2024
+                </span>
+              </h2>
+              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
+                Oasis Infobyte
+              </h3>
+              <span className="ml-8 mx-12">
+                Successfully completed a dynamic web development internship,
+                delivering three projects powered by React, Tailwind CSS, and
+                advanced state management.
               </span>
-            </h2>
-            <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-              Oasis Infobyte
-            </h3>
-            <span className="ml-8 mx-12">
-              Successfully completed a dynamic web development internship,
-              delivering three projects powered by React, Tailwind CSS, and
-              advanced state management.
-            </span>
-          </div>
-          <div className="sm:ml-4 ml-2 relative mt-5">
-            <h3 className=" font-bold absolute text-xl -left-20">2021</h3>
-            <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-              <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
-              B.tech (ECE){" "}
-              <span className="sm:block sm:text-md text-xs font-semibold">
-                &nbsp; &nbsp;Aug 2017 - May 2021
+            </div>
+            <div className="sm:ml-4 ml-2 relative mt-5">
+              <h3 className=" font-bold absolute text-xl -left-20">2021</h3>
+              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
+                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
+                B.tech (ECE){" "}
+                <span className="sm:block sm:text-md text-xs font-semibold">
+                  &nbsp; &nbsp;Aug 2017 - May 2021
+                </span>
+              </h2>
+              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
+                Punjab Technical University
+              </h3>
+              <span className=" ml-8 mx-12">
+                Graduated from Punjab Technical University in Electronics &
+                Communication Engineering.
               </span>
-            </h2>
-            <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-              Punjab Technical University
-            </h3>
-            <span className=" ml-8 mx-12">
-              Graduated from Punjab Technical University in Electronics &
-              Communication Engineering.
-            </span>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

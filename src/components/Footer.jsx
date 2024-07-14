@@ -12,11 +12,21 @@ function Footer() {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={100}
         >
           Hire me!
         </ScrollLink>
       </span>
+      <ScrollLink
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={200}
+        className="text-lime-400 text-3xl hover:text-4xl cursor-pointer"
+      >
+        ▲
+      </ScrollLink>
     </footer>
   );
 }

@@ -10,7 +10,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="text-white bg-black  h-full ">
+    <div className="text-white bg-zinc-950 h-full ">
       <Header />
       <Hero />
       <About />

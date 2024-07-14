@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import HeroPic from "../assets/HeroPic.jpg";
 import "../App.css";
+import Reveal from "./Reveal";
 
 function Hero() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [shouldRenderCircles, setShouldRenderCircles] = useState(true);
+  const [shouldRenderCircles, setShouldRenderCircles] = useState(
+    window.innerWidth > 768
+  );
+
   useEffect(() => {
     const handleResize = () => {
-      setShouldRenderCircles(window.innerWidth > 768); // Adjust the breakpoint as needed
+      setShouldRenderCircles(window.innerWidth > 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -17,60 +21,69 @@ function Hero() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   const handleHover = (index) => {
     setHoveredIndex(index);
   };
 
   const circles = shouldRenderCircles
-    ? Array.from({ length: 500 }, (_, index) => (
+    ? Array.from({ length: 600 }, (_, index) => (
         <div
           key={index}
-          className={`absolute opacity-50 rounded-full transition-all duration-100 z-0 hover:translate-y-14  animate-bounce  ${
-            hoveredIndex === index ? "bg-gray-200 p-2" : " bg-lime-400"
+          className={`absolute opacity-50 cursor-crosshair rounded-full transition-all duration-100 ${
+            hoveredIndex === index
+              ? "bg-orange-500 p-3 text-center opacity-100"
+              : "bg-gradient-to-b from-neutral-500 via-neutral-600 to-neutral-900"
           }`}
           style={{
-            width: "15px",
-            height: "15px",
-            right: `${60 + (index % 10) * 25}px`, // Adjust position
-            top: `${0 + Math.floor(index / 30) * 25}px`, // Adjust position
+            width: "10px",
+            height: "10px",
+            right: `${60 + (index % 20) * 25}px`,
+            left: `${690 + (index % 20) * 25}px`,
+            top: `${0 + Math.floor(index / 30) * 25}px`,
           }}
           onMouseEnter={() => handleHover(index)}
           onMouseLeave={() => handleHover(null)}
-        ></div>
+        />
       ))
     : null;
 
   return (
     <div
       id="hero"
-      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 h-screen w-full"
+      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 h-screen w-full md:px-20"
     >
       {circles}
-      <div className="flex flex-col sm:flex-row justify-center items-center md:p-3 mt-16 sm:mt-2 ">
-        <div>
-          <div className="m-auto px-4 py-10 flex flex-col gap-2 w-full z-20 ">
-            <h1 className=" font-bold sm:text-4xl text-3xl z-30 animate-slidein [--slidein-delay:300ms] opacity-0">
-              Hello, I&apos;m Khalid Shakeel,
+      <div className="flex flex-col sm:flex-row justify-center items-center md:p-3 mt-16 sm:mt-2">
+        <div className="m-auto md:mt-14 px-4 md:py-10 flex flex-col gap-2 w-full">
+          <Reveal>
+            <h1 className="font-extrabold  md:text-9xl text-6xl text-neutral-300 animate-slidein [--slidein-delay:300ms] opacity-0">
+              Hey, I&apos;m Khalid
+              <span className="text-9xl font-extrabold text-lime-400">.</span>
             </h1>
-            <h1 className="font-bold sm:text-4xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap z-30 ">
+            <h1 className="font-bold sm:text-4xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
               frontend engineer
             </h1>
-            <span className="mt-4 text-gray-300 text-base font-semibold z-20 animate-slidein [--slidein-delay:700ms] opacity-0">
+          </Reveal>
+          <Reveal>
+            <span className="mt-4 text-gray-300 text-base font-semibold animate-slidein [--slidein-delay:700ms] opacity-0">
               Welcome to my digital workshop, where frontend tech
               <br />
-              bring ideas to life. With every line of code, I priortize <br />
+              brings ideas to life. With every line of code, I prioritize
+              <br />
               elegance, and effectiveness, crafting inspiring experiences.
             </span>
-          </div>
+          </Reveal>
         </div>
-
-        <div className="relative mb-44  animate-slidein [--slidein-delay:300ms] opacity-0 ">
-          <img
-            src={HeroPic}
-            alt=""
-            className="rounded-full sm:h-36 sm:w-36 sm:mt-11 w-48 h-48 shadow-md shadow-cyan-300 border-2 border-slate-100 relative z-10 transform sm:hover:scale-110"
-          />
-          <span className="bg-gradient-to-br from-gray-400 to-lime-400 opacity-15 shadow-xl shadow-lime-300   rounded-full p-7 sm:h-32 sm:w-32 w-44 h-44 sm:mt-8 absolute left-10 bottom-3 z-0 hover:translate-x-2 "></span>
+        <div className="relative mb-44 animate-slidein [--slidein-delay:300ms] opacity-0">
+          <Reveal>
+            <img
+              src={HeroPic}
+              alt="Hero"
+              className="rounded-full sm:h-36 sm:w-36 sm:mt-11 md:mt-24 w-48 h-48 shadow-md shadow-cyan-300 border-2 border-slate-100 relative z-10 transform sm:hover:scale-110"
+            />
+          </Reveal>
+          <span className="bg-gradient-to-br from-gray-400 to-lime-400 opacity-15 shadow-xl shadow-lime-300 rounded-full p-7 sm:h-32 sm:w-32 w-44 h-44 sm:mt-8 absolute left-10 bottom-3 z-0 hover:translate-x-2" />
         </div>
       </div>
     </div>

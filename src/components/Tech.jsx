@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from "./Reveal";
 
 function Tech() {
   return (
@@ -9,56 +10,66 @@ function Tech() {
         </h2>
       </div>
       <div className="mt-10 w-full ">
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">FRONTEND DEVELOPMENT</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
+        <Reveal>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">FRONTEND DEVELOPMENT</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+          <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">REACT</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+        </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">REACT</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
-        <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">JAVASCRIPT</h2>
-          <p className="text-gray-500 mr-16  sm:mr-[20%]">Intermediate</p>
-        </div>
-        <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm ">REDUX</h2>
-          <p className="text-gray-500 mr-[50%] sm:mr-[50%]">Beginner</p>
-        </div>
+        <Reveal>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">JAVASCRIPT</h2>
+            <p className="text-gray-500 mr-16  sm:mr-[20%]">Intermediate</p>
+          </div>
+          <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm ">REDUX</h2>
+            <p className="text-gray-500 mr-[50%] sm:mr-[50%]">Beginner</p>
+          </div>
+        </Reveal>
         <span className="h-2 rounded-full w-[50%]  bg-lime-400 block"></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">TAILWIND</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
+        <Reveal>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">TAILWIND</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+          <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">CSS3</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+        </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">CSS3</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
-        <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">HTML5</h2>
-          <p className="text-gray-500">Advanced</p>
-        </div>
-        <span className="h-2 rounded-full w-full bg-lime-400 block "></span>
+        <Reveal>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">HTML5</h2>
+            <p className="text-gray-500">Advanced</p>
+          </div>
+          <span className="h-2 rounded-full w-full bg-lime-400 block "></span>
 
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">RESPONSIVE DESIGN</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">RESPONSIVE DESIGN</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+        </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm ">MONGODB</h2>
-          <p className="text-gray-500 mr-[50%] sm:mr-[50%]">Beginner</p>
-        </div>
-        <span className="h-2 rounded-full w-[50%]  bg-lime-400 block"></span>
-        <div className=" flex justify-between font-bold mt-4">
-          <h2 className=" font-bold text-sm">GIT & GITHUB</h2>
-          <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
-        </div>
+        <Reveal>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm ">MONGODB</h2>
+            <p className="text-gray-500 mr-[50%] sm:mr-[50%]">Beginner</p>
+          </div>
+          <span className="h-2 rounded-full w-[50%]  bg-lime-400 block"></span>
+          <div className=" flex justify-between font-bold mt-4">
+            <h2 className=" font-bold text-sm">GIT & GITHUB</h2>
+            <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
+          </div>
+        </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
       </div>
       <div className="flex flex-col justify-start mt-24">

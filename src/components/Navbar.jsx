@@ -2,7 +2,11 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Resume from "../assets/latest.pdf";
 
-function Navbar() {
+function Navbar({ closeMenu }) {
+  const handleLinkClick = () => {
+    closeMenu(); // Close the menu when a link is clicked
+  };
+
   return (
     <div className="">
       <nav>
@@ -13,7 +17,8 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={250}
-              duration={500}
+              duration={200}
+              onClick={handleLinkClick}
             >
               About
             </ScrollLink>
@@ -24,7 +29,8 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-120}
-              duration={500}
+              duration={200}
+              onClick={handleLinkClick}
             >
               Portfolio
             </ScrollLink>
@@ -34,38 +40,33 @@ function Navbar() {
               to="technologies"
               spy={true}
               smooth={true}
-              offset={-120}
-              duration={500}
+              offset={-290}
+              duration={200}
+              onClick={handleLinkClick}
             >
               Technologies
             </ScrollLink>
           </li>
           <li className="text-gray-400 hover:text-white hover:border-b-2 hover:border-lime-400 cursor-pointer">
-            <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <a
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleLinkClick}
+            >
               Resume
             </a>
           </li>
-          <li className="text-gray-400 hover:text-white  cursor-pointer border-lime-400 border-2 rounded-md px-3">
+          <li className="text-gra y-400 hover:text-white  cursor-pointer border-lime-400 border-2 rounded-md px-3">
             <ScrollLink
               to="contact"
               spy={true}
               smooth={true}
-              offset={-100}
-              duration={500}
+              offset={-310}
+              duration={200}
+              onClick={handleLinkClick}
             >
               Contact
-            </ScrollLink>
-          </li>
-          <li className="text-black hover:text-white hover:border-b hover:border-lime-400  cursor-pointer fixed bottom-8 right-4 bg-lime-400 p-2 rounded-sm shadow-md shadow-orange-400 hidden sm:block">
-            <ScrollLink
-              to="hero"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="text-black"
-            >
-              ▲
             </ScrollLink>
           </li>
         </ul>
