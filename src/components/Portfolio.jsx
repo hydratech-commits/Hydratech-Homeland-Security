@@ -11,14 +11,26 @@ function Portfolio() {
       id="portfolio"
       className={`container m-auto sm:w-3/4 mt-12 sm:mt-16 sm:mb-16  transition-transform duration-800 ease-in-out`}
     >
-      <h2 className=" font-bold text-3xl mb-5 bg-gray-400 text-gray-600 w-fit px-2 py-1 rounded-sm sm:ml-12 ml-9 shadow-md shadow-lime-500">
-        Projects
-      </h2>
+      <Reveal>
+        <div className="flex justify-center items-center w-full mb-3">
+          <hr className=" w-full border border-neutral-300  ml-8" />
+          <h2 className="md:text-7xl text-3xl font-bold  mr-8  w-fit mb-9 ">
+            Projects
+            <span className=" text-7xl font-extrabold text-lime-400">.</span>
+          </h2>
+        </div>
+      </Reveal>
 
       <div className="grid sm:grid-cols-2 px-5 gap-10 ">
         <Reveal>
-          <div className="border border-lime-400 hover:shadow-lime-400 hover:shadow-md duration-500 hover:cursor-pointer hover:scale-105  rounded-md p-5">
-            <img src={KeyMason} alt="" />
+          <div className=" hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+            <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
+              <img
+                src={KeyMason}
+                alt=""
+                className=" hover:cursor-pointer hover:rotate-6  "
+              />
+            </div>
             <h3 className="text-lg font-semibold mt-5">
               KeyMason: A Password Generator App
             </h3>
@@ -41,8 +53,15 @@ function Portfolio() {
               </button>
             </div>
           </div>
-          <div className="border border-lime-400 hover:shadow-lime-400 hover:shadow-md duration-500 hover:cursor-pointer hover:scale-105  rounded-md p-5">
-            <img src={DevFolio} alt="" />
+          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+            <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
+              {" "}
+              <img
+                src={DevFolio}
+                alt=""
+                className=" hover:cursor-pointer hover:rotate-6  "
+              />
+            </div>
             <h3 className="text-lg font-semibold mt-5">
               DevFolio: A Personal Portfolio Website
             </h3>
@@ -70,8 +89,15 @@ function Portfolio() {
           </div>
         </Reveal>
         <Reveal>
-          <div className="border border-lime-400 hover:shadow-lime-400 hover:shadow-md duration-500 hover:cursor-pointer hover:scale-105  rounded-md p-5">
-            <img src={TaskTrek} alt="" />
+          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+            <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
+              {" "}
+              <img
+                src={TaskTrek}
+                alt=""
+                className=" hover:cursor-pointer hover:rotate-6  "
+              />
+            </div>
             <h3 className="text-lg font-semibold mt-5">
               TaskTrek: A basic Task tracking app
             </h3>
@@ -96,8 +122,14 @@ function Portfolio() {
               </button>
             </div>
           </div>
-          <div className="border border-lime-400 hover:shadow-lime-400 hover:shadow-md duration-500 hover:cursor-pointer hover:scale-105  rounded-md p-5">
-            <img src={Weather} alt="" />
+          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+            <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
+              <img
+                src={Weather}
+                alt=""
+                className=" hover:cursor-pointer hover:rotate-6  "
+              />
+            </div>
             <h3 className="text-lg font-semibold mt-5">
               Weather Sphere: A Weather forcasting app.
             </h3>

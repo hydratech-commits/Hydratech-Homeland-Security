@@ -6,8 +6,10 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { IoMdMail } from "react-icons/io";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Reveal from "./Reveal";
 
 function Contact() {
   const form = useRef();
@@ -51,9 +53,8 @@ function Contact() {
             touch!
           </span>
         </span>
-        <span>Contact me</span>
         <br />
-        <span className=" sm:text-4xl font-bold text-lime-400 mb-3">
+        <span className=" sm:text-2xl font-bold text-lime-400 mb-3">
           +91 7006602813
         </span>
         <div className="flex justify-center items-center gap-x-4 text-2xl w-full ">
@@ -83,6 +84,11 @@ function Contact() {
 
       <div className="">
         <form className="flex flex-col " ref={form} onSubmit={sendEmail}>
+          <Reveal>
+            <h1 className=" text-7xl text-neutral-300 w-full  text-center mb-2 font-extrabold">
+              Contact<span className=" text-lime-400">.</span>
+            </h1>
+          </Reveal>
           <div className="flex flex-col sm:flex-row gap-x-2">
             <input
               type="text"
@@ -117,6 +123,20 @@ function Contact() {
             {done && "Thanks For Contacting Me"}
           </span>
         </form>
+        <Reveal>
+          <div className=" flex flex-col justify-center items-center my-3">
+            <span className=" text-neutral-300 text-2xl font-bold ">Or</span>{" "}
+            <br />
+            <span className=" text-neutral-400 text-base px-4">
+              Shoot me an email if you want to connect! You can also find me on
+              Linkedin or Twitter if that&apos;s more your speed.
+            </span>
+            <span className=" flex justify-center items-center gap-x-2 md:text-2xl font-semibold  text-neutral-400 mt-3">
+              {" "}
+              <IoMdMail className=" text-lime-400" /> khalidshakeel46@gmail.com
+            </span>
+          </div>
+        </Reveal>
       </div>
     </div>
   );

@@ -4,11 +4,16 @@ import Reveal from "./Reveal";
 function Tech() {
   return (
     <div id="technologies" className=" m-auto sm:w-2/3 w-4/5 sm:mt-24 pb-44 ">
-      <div className="m-auto px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold mt-11 bg-gray-400 text-gray-600 w-fit px-2 py-1 rounded-sm shadow-md shadow-lime-500">
-          Tech-Stack
-        </h2>
-      </div>
+      <Reveal>
+        <div className="flex justify-center items-center w-full">
+          <h2 className="text-3xl md:text-5xl font-bold w-fit ">
+            TechStack
+            <span className=" text-7xl font-extrabold text-lime-400">.</span>
+          </h2>
+          <hr className=" w-full border border-neutral-300 mr-8 mt-9" />
+        </div>
+      </Reveal>
+
       <div className="mt-10 w-full ">
         <Reveal>
           <div className=" flex justify-between font-bold mt-4">
@@ -80,31 +85,34 @@ function Tech() {
         </div>
 
         <div className="grid sm:grid-cols-3  gap-6 mt-3">
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">DSA</h3>
-          </div>
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">Debugging</h3>
-          </div>
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">Problem Solving</h3>
-          </div>
-
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">Communication</h3>
-          </div>
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">Team Work</h3>
-          </div>
-          <div className="flex flex-row justify-start items-center">
-            <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
-            <h3 className=" text-xl font-bold ">Adaptability</h3>
-          </div>
+          <Reveal>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">DSA</h3>
+            </div>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">Debugging</h3>
+            </div>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">Problem Solving</h3>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">Communication</h3>
+            </div>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">Team Work</h3>
+            </div>
+            <div className="flex flex-row justify-start items-center">
+              <span className=" bg-lime-400 rounded-full h-4 w-4 block mx-2"></span>
+              <h3 className=" text-xl font-bold ">Adaptability</h3>
+            </div>
+          </Reveal>
         </div>
       </div>
     </div>
