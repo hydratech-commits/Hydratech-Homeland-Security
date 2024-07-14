@@ -61,12 +61,12 @@ function Hero() {
               Hey, I&apos;m Khalid
               <span className="text-9xl font-extrabold text-lime-400">.</span>
             </h1>
-            <h1 className="font-bold sm:text-4xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
-              frontend engineer
+            <h1 className="font-bold md:text-7xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
+              frontend Engineer
             </h1>
           </Reveal>
           <Reveal>
-            <span className="mt-4 text-gray-300 text-base font-semibold animate-slidein [--slidein-delay:700ms] opacity-0">
+            <span className="mt-4 text-gray-300  font-semibold animate-slidein [--slidein-delay:700ms] opacity-0 md:text-xl">
               Welcome to my digital workshop, where frontend tech
               <br />
               brings ideas to life. With every line of code, I prioritize
