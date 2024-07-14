@@ -128,8 +128,7 @@ function Contact() {
             <span className=" text-neutral-300 text-2xl font-bold ">Or</span>{" "}
             <br />
             <span className=" text-neutral-400 text-base px-4">
-              Shoot me an email if you want to connect! You can also find me on
-              Linkedin or Twitter if that&apos;s more your speed.
+              Shoot me an email if you want to connect!
             </span>
             <span className=" flex justify-center items-center gap-x-2 md:text-2xl font-semibold  text-neutral-400 mt-3">
               {" "}
