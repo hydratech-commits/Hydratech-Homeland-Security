@@ -1,6 +1,12 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Resume from "../assets/latest.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Navbar({ closeMenu }) {
   const handleLinkClick = () => {
@@ -70,6 +76,29 @@ function Navbar({ closeMenu }) {
             </ScrollLink>
           </li>
         </ul>
+        <div className="flex justify-center items-center gap-x-4 text-2xl w-full text-neutral-600 ">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
       </nav>
     </div>
   );

@@ -17,7 +17,7 @@ function Header() {
     closeMenu(); // Close the menu when a link is clicked
   };
   return (
-    <div className="flex justify-between items-center mx-auto px-2 sm:px-4 sm:py-8 py-6 sticky top-0 w-full z-50 bg-black border-b sm:border-none border-gray-300 ">
+    <div className="flex justify-between items-center mx-auto px-2 sm:px-4 sm:py-5 py-6 sticky top-0 w-full z-50 bg-black border-b sm:border-none border-gray-300 ">
       <div className="font-bold text-xl sm:text-3xl text-gray-400 cursor-pointer transition-all duration-200 ">
         <ScrollLink
           to="hero"
