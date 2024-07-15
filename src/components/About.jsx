@@ -22,7 +22,7 @@ function About() {
       </div>
       <Reveal>
         <div className="flex justify-center items-center w-full">
-          <h2 className="text-3xl md:text-7xl font-bold sm:ml-40 ml-8  w-fit ">
+          <h2 className="text-3xl md:text-7xl text-neutral-900 font-bold sm:ml-40 ml-8  w-fit ">
             About
             <span className=" text-7xl font-extrabold text-lime-400">.</span>
           </h2>
@@ -32,7 +32,7 @@ function About() {
 
       <div className="mt-3">
         <Reveal>
-          <div className=" sm:p-12 px-6 sm:px-36 font-semibold mb-8  ">
+          <div className=" sm:p-12 px-6 sm:px-36 text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
             <span>
               🎨 Frontend enthusiast with a knack for blending creativity with
               code. Specializing in ReactJS, Redux, JavaScript, Tailwind CSS,
@@ -43,7 +43,7 @@ function About() {
           </div>
         </Reveal>
 
-        <div className=" flex flex-col relative before:absolute before:top-2 before:left-0 before:bottom-0 before:w-2 before:bg-gray-600 before:rounded-full sm:ml-32 ml-1">
+        <div className=" flex flex-col relative before:absolute before:top-2 before:left-0 before:bottom-0 before:w-2 before:bg-gray-600 before:rounded-full sm:ml-32 ml-1 ">
           <Reveal>
             <div className="sm:ml-4 ml-2 relative ">
               <h3 className=" font-bold absolute text-xl -left-20 translate-y-1">
@@ -51,10 +51,10 @@ function About() {
               </h3>
 
               <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
+                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5 z-40"></span>
                 Web Development Intern{" "}
                 <span className="  sm:block sm:text-md text-xs font-semibold">
-                  &nbsp; &nbsp;May 2024 - Present
+                  &nbsp; &nbsp;May 2024 - June 2024
                 </span>
               </h2>
               <h3 className=" sm:text-xl font-semibold mb-2 ml-8">

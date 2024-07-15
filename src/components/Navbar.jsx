@@ -17,7 +17,7 @@ function Navbar({ closeMenu }) {
     <div className="">
       <nav>
         <ul className="flex flex-col sm:flex-row flex-wrap z-20 sm:justify-center justify-end sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">
-          <li className="text-neutral-600 hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="about"
               spy={true}
@@ -29,7 +29,7 @@ function Navbar({ closeMenu }) {
               About
             </ScrollLink>
           </li>
-          <li className="text-gray-400 hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="portfolio"
               spy={true}
@@ -41,7 +41,7 @@ function Navbar({ closeMenu }) {
               Portfolio
             </ScrollLink>
           </li>
-          <li className="text-gray-400 hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="technologies"
               spy={true}
@@ -53,7 +53,7 @@ function Navbar({ closeMenu }) {
               Technologies
             </ScrollLink>
           </li>
-          <li className="text-gray-400 hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
             <a
               href={Resume}
               target="_blank"
@@ -63,7 +63,7 @@ function Navbar({ closeMenu }) {
               Resume
             </a>
           </li>
-          <li className="text-gra y-400 hover:text-neutral-400  cursor-pointer border-lime-400 border-2 rounded-md px-3">
+          <li className=" hover:text-neutral-400  cursor-pointer  rounded-md px-3">
             <ScrollLink
               to="contact"
               spy={true}

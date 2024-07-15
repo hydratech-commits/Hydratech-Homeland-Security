@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import HeroPic from "../assets/HeroPic.jpg";
 import "../App.css";
 import Reveal from "./Reveal";
@@ -54,7 +54,7 @@ function Hero() {
       className="relative bg-fixed bg-parl bg-cover bg-opacity-85 h-screen w-full md:px-20"
     >
       {circles}
-      <div className="flex flex-col sm:flex-row justify-center items-center md:p-3 mt-16 sm:mt-1">
+      <div className="flex flex-col sm:flex-row justify-between w-full items-center md:p-3 md:pt-11 mt-16 sm:mt-1">
         <div className="m-auto md:mt-10 px-4 md:py-10 flex flex-col gap-2 w-full">
           <Reveal>
             <h1 className="font-extrabold  md:text-9xl text-6xl text-neutral-300 animate-slidein [--slidein-delay:300ms] opacity-0">
@@ -75,7 +75,8 @@ function Hero() {
             </span>
           </Reveal>
         </div>
-        <Reveal>
+      </div>
+      {/* <Reveal>
           <div className="relative mb-44 animate-slidein [--slidein-delay:300ms] opacity-0">
             <img
               src={HeroPic}
@@ -84,8 +85,7 @@ function Hero() {
             />
             <span className="bg-gradient-to-br from-gray-400 to-lime-400 opacity-15 shadow-xl shadow-lime-300 rounded-full p-7 sm:h-32 sm:w-32 w-44 h-44 sm:mt-8 absolute left-10 bottom-3 z-0 hover:translate-x-2" />{" "}
           </div>
-        </Reveal>
-      </div>
+        </Reveal>*/}
     </div>
   );
 }

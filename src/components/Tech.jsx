@@ -6,7 +6,7 @@ function Tech() {
     <div id="technologies" className=" m-auto sm:w-2/3 w-4/5 sm:mt-24 pb-44 ">
       <Reveal>
         <div className="flex justify-center items-center w-full">
-          <h2 className="text-3xl md:text-5xl font-bold w-fit ">
+          <h2 className="text-3xl md:text-6xl text-neutral-300 font-bold w-fit ">
             TechStack
             <span className=" text-7xl font-extrabold text-lime-400">.</span>
           </h2>
@@ -17,19 +17,21 @@ function Tech() {
       <div className="mt-10 w-full ">
         <Reveal>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">FRONTEND DEVELOPMENT</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">
+              FRONTEND DEVELOPMENT
+            </h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
           <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">REACT</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">REACT</h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
         </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
         <Reveal>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">JAVASCRIPT</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">JAVASCRIPT</h2>
             <p className="text-gray-500 mr-16  sm:mr-[20%]">Intermediate</p>
           </div>
           <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
@@ -41,25 +43,27 @@ function Tech() {
         <span className="h-2 rounded-full w-[50%]  bg-lime-400 block"></span>
         <Reveal>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">TAILWIND</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">TAILWIND</h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
           <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">CSS3</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">CSS3</h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
         </Reveal>
         <span className="h-2 rounded-full w-4/5 bg-lime-400 block "></span>
         <Reveal>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">HTML5</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">HTML5</h2>
             <p className="text-gray-500">Advanced</p>
           </div>
           <span className="h-2 rounded-full w-full bg-lime-400 block "></span>
 
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">RESPONSIVE DESIGN</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">
+              RESPONSIVE DESIGN
+            </h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
         </Reveal>
@@ -71,7 +75,9 @@ function Tech() {
           </div>
           <span className="h-2 rounded-full w-[50%]  bg-lime-400 block"></span>
           <div className=" flex justify-between font-bold mt-4">
-            <h2 className=" font-bold text-sm">GIT & GITHUB</h2>
+            <h2 className=" font-bold text-sm text-neutral-300">
+              GIT & GITHUB
+            </h2>
             <p className="text-gray-500 mr-16 sm:mr-[20%]">Intermediate</p>
           </div>
         </Reveal>
