@@ -1,6 +1,6 @@
 import React from "react";
 import KeyMason from "../assets/KeyMason.png";
-import DevFolio from "../assets/devfolio.png";
+import Blog from "../assets/blog.png";
 import TaskTrek from "../assets/tasktrek.png";
 import Weather from "../assets/weather.png";
 import Reveal from "./Reveal";
@@ -57,29 +57,27 @@ function Portfolio() {
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               {" "}
               <img
-                src={DevFolio}
+                src={Blog}
                 alt=""
                 className=" hover:cursor-pointer hover:rotate-6  "
               />
             </div>
             <h3 className="text-lg font-bold  text-neutral-300 mt-5">
-              DevFolio: A Personal Portfolio Website
+              BlogBeacon: A Blogging web app
             </h3>
             <p className="text-neutral-500 text-sm mt-2">
-              A Personal portfolio website giving my introduction. Embarking on
-              a journey of continuous improvement, this React-powered portfolio
-              serves as my canvas for honing web development skills. Stay tuned
-              as I refine and enhance its design and functionality.
+              BlogBeacon: Whether you&apos;re a seasoned writer or just
+              starting, our app offers a seamless and engaging experience.
             </p>
             <div className="flex justify-evenly mt-3">
               <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-neutral-400 to-cyan-400 hover:text-neutral-900 hover:scale-105 duration-200 hover:opacity-50 rounded-full">
-                <a href="https://devfoliobykhalid.netlify.app/" target="blank">
+                <a href="https://blogbeacon.vercel.app/" target="blank">
                   Live Preview
                 </a>
               </button>
               <button className="sm:px-6 px-3 py-2 border rounded-full hover:border-lime-400 text-neutral-300">
                 <a
-                  href="https://github.com/sourcebykhalid/KeyMason-A-Password-Generator-App"
+                  href="https://github.com/sourcebykhalid/Blogbeacon-App"
                   target="blank"
                 >
                   Checkout Github
