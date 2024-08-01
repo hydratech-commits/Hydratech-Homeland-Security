@@ -23,7 +23,7 @@ function Portfolio() {
 
       <div className="grid sm:grid-cols-2 px-5 gap-10 ">
         <Reveal>
-          <div className=" hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+          <div className="hover:border hover:border-lime-500 hover:shadow-md duration-500 hover:cursor-pointer rounded-md md:hover:border-none    p-5">
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               <img
                 src={KeyMason}
@@ -53,7 +53,7 @@ function Portfolio() {
               </button>
             </div>
           </div>
-          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+          <div className="hover:border hover:border-lime-500 hover:shadow-md duration-500 hover:cursor-pointer rounded-md md:hover:border-none    p-5">
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               {" "}
               <img
@@ -87,7 +87,7 @@ function Portfolio() {
           </div>
         </Reveal>
         <Reveal>
-          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+          <div className="hover:border hover:border-lime-500 hover:shadow-md duration-500 hover:cursor-pointer rounded-md md:hover:border-none    p-5">
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               {" "}
               <img
@@ -120,7 +120,7 @@ function Portfolio() {
               </button>
             </div>
           </div>
-          <div className="hover:shadow-md duration-500 hover:cursor-pointer    p-5">
+          <div className="hover:border hover:border-lime-500 hover:shadow-md duration-500 hover:cursor-pointer rounded-md md:hover:border-none    p-5">
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               <img
                 src={Weather}
