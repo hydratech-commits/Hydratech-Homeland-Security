@@ -10,7 +10,7 @@ import {
 
 function Navbar({ closeMenu }) {
   const handleLinkClick = () => {
-    closeMenu(); // Close the menu when a link is clicked
+    closeMenu(); // Close the menu when a link is
   };
 
   return (
