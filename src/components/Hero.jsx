@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import HeroPic from "../assets/HeroPic.jpg";
 import "../App.css";
 import Reveal from "./Reveal";
 
@@ -62,7 +61,7 @@ function Hero() {
               <span className="text-9xl font-extrabold text-lime-400">.</span>
             </h1>
             <h1 className="font-bold md:text-7xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
-              frontend Engineer
+              Software Engineer
             </h1>
           </Reveal>
           <Reveal>

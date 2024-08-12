@@ -124,10 +124,10 @@ function Contact() {
           </span>
         </form>
         <Reveal>
-          <div className=" flex flex-col justify-center items-center my-3">
-            <span className=" text-neutral-300 text-2xl font-bold ">Or</span>{" "}
+          <div className="w-full mx-auto flex flex-col justify-center items-center my-3">
+            <span className="text-neutral-300 text-2xl font-bold ">Or</span>{" "}
             <br />
-            <span className=" text-neutral-400 text-base px-4">
+            <span className="text-neutral-400 text-base px-4">
               Shoot me an email if you want to connect!
             </span>
             <span className=" flex justify-center items-center gap-x-2 md:text-2xl font-semibold  text-neutral-400 mt-3">
