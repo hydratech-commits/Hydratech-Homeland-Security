@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+// import ThemeBtn from "./ThemeBtn";
 
 function Navbar({ closeMenu }) {
   const handleLinkClick = () => {
@@ -74,7 +75,7 @@ function Navbar({ closeMenu }) {
             >
               Contact
             </ScrollLink>
-          </li>
+          </li>{" "}
         </ul>
         <div className="flex justify-center items-center gap-x-4 text-2xl w-full text-neutral-600 ">
           <a

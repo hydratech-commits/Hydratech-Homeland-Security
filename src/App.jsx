@@ -7,18 +7,21 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
+import { ThemeProvider } from "./context/theme";
 
 function App() {
   return (
-    <div className="text-white bg-zinc-950 h-full ">
-      <Header />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Tech />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="text-white bg-zinc-950 h-full ">
+        <Header />
+        <Hero />
+        <About />
+        <Portfolio />
+        <Tech />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

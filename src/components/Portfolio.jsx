@@ -1,7 +1,7 @@
 import React from "react";
 import KeyMason from "../assets/KeyMason.png";
 import Blog from "../assets/blog.png";
-import TaskTrek from "../assets/tasktrek.png";
+import TaskTrek from "../assets/taskhive.png";
 import Weather from "../assets/weather.png";
 import Reveal from "./Reveal";
 
@@ -106,13 +106,13 @@ function Portfolio() {
             </p>
             <div className="flex justify-evenly mt-3">
               <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-neutral-400 to-cyan-400 hover:text-neutral-900 hover:scale-105 duration-200 hover:opacity-50 rounded-full">
-                <a href="https://tasktrekk.netlify.app/" target="blank">
+                <a href="https://taskhiveapp.netlify.app/" target="blank">
                   Live Preview
                 </a>
               </button>
               <button className="sm:px-6 px-3 py-2 border rounded-full hover:border-lime-400 text-neutral-300">
                 <a
-                  href="https://github.com/sourcebykhalid/OIBSIP/tree/main/TaskTrek"
+                  href="https://github.com/sourcebykhalid/Todo-React/tree/main"
                   target="blank"
                 >
                   Checkout Github

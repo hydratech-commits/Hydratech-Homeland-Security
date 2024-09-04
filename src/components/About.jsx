@@ -1,13 +1,19 @@
 import React from "react";
 import Reveal from "./Reveal";
+import useTheme from "../context/theme";
 
 function About() {
+  const { themeMode } = useTheme();
   return (
     <div
       id="about"
-      className={`flex flex-col justify-start  sm:py-9 bg-white text-gray-900 py-28`}
+      className={`flex flex-col justify-start  sm:py-9 ${
+        themeMode === "dark"
+          ? "bg-neutral-800 text-neutral-300"
+          : "bg-neutral-100 text-neutral-900"
+      } py-28`}
     >
-      <div className="custom-shape-divider-bottom-1715279379">
+      <div className={`custom-shape-divider-bottom-1715279379 `}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
