@@ -1,5 +1,5 @@
 import React from "react";
-import KeyMason from "../assets/KeyMason.png";
+import Aconews from "../assets/acoNews.png";
 import Blog from "../assets/blog.png";
 import TaskTrek from "../assets/taskhive.png";
 import Weather from "../assets/weather.png";
@@ -26,26 +26,29 @@ function Portfolio() {
           <div className="hover:border hover:border-lime-500 hover:shadow-md duration-500 hover:cursor-pointer rounded-md md:hover:border-none    p-5">
             <div className=" p-12 pb-0 rounded-md bg-neutral-800 overflow-hidden">
               <img
-                src={KeyMason}
+                src={Aconews}
                 alt=""
                 className=" hover:cursor-pointer hover:rotate-6  "
               />
             </div>
             <h3 className="text-lg mt-5 font-bold  text-neutral-300">
-              KeyMason: A Password Generator App
+              AcoNews: A dynamic news aggregator with advanced search and
+              filtering.
             </h3>
             <p className="text-neutral-500 text-sm mt-2">
-              A random password generator app to secure your data, accounts etc
+              AcoNews is a dynamic news aggregator application that fetches,
+              filters, and displays the latest news articles from various
+              sources with a user-friendly interface
             </p>
             <div className="flex justify-evenly mt-8">
               <button className="px-3 sm:px-6 py-2 bg-gradient-to-t from-neutral-400 to-cyan-400 hover:text-neutral-900 hover:scale-105 duration-200 hover:opacity-50  rounded-full">
-                <a href="https://keymason.netlify.app/" target="blank">
+                <a href="https://aconews-a37c8.web.app/" target="blank">
                   Live Preview
                 </a>
               </button>
               <button className="sm:px-6 px-3 py-2 border rounded-full hover:border-lime-400 text-neutral-300">
                 <a
-                  href="https://github.com/sourcebykhalid/KeyMason-A-Password-Generator-App"
+                  href="https://github.com/sourcebykhalid/ACONEWS-App"
                   target="blank"
                 >
                   Checkout Github
