@@ -50,7 +50,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 h-screen w-full md:px-20"
+      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 animation-slideIn animate-zoom   h-screen w-full md:px-20"
     >
       {circles}
       <div className="flex flex-col sm:flex-row justify-between w-full items-center md:p-3 md:pt-11 mt-16 sm:mt-1">

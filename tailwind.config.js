@@ -1,5 +1,6 @@
-import { transform } from "framer-motion";
+import { animate, transform } from "framer-motion";
 import Framer from "./src/assets/framer";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -23,6 +24,8 @@ export default {
       },
       animation: {
         slidein: "slidein 1s  ease var(--slidein-delay, 0) forwards",
+        zoom: "zoom 10s ease-in-out infinite",
+        scroll: "scroll 10s linear infinite",
       },
     },
   },
