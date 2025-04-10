@@ -18,7 +18,7 @@ function Navbar({ closeMenu }) {
     <div className="">
       <nav>
         <ul className="flex flex-col sm:flex-row flex-wrap z-20 sm:justify-center justify-end sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">
-          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="about"
               spy={true}
@@ -30,7 +30,7 @@ function Navbar({ closeMenu }) {
               About
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="portfolio"
               spy={true}
@@ -39,10 +39,10 @@ function Navbar({ closeMenu }) {
               duration={200}
               onClick={handleLinkClick}
             >
-              Portfolio
+              Projects
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="technologies"
               spy={true}
@@ -51,20 +51,20 @@ function Navbar({ closeMenu }) {
               duration={200}
               onClick={handleLinkClick}
             >
-              Technologies
+              Services
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
             <a
               href={Resume}
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleLinkClick}
             >
-              Resume
+              Testimonials
             </a>
           </li>
-          <li className=" hover:text-neutral-400  cursor-pointer  rounded-md px-3">
+          <li className=" hover:text-neutral-400 text-orange-500  cursor-pointer  rounded-md px-3">
             <ScrollLink
               to="contact"
               spy={true}
@@ -82,7 +82,7 @@ function Navbar({ closeMenu }) {
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 hover:scale-105"
+            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -90,7 +90,7 @@ function Navbar({ closeMenu }) {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 hover:scale-105"
+            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -98,7 +98,7 @@ function Navbar({ closeMenu }) {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 hover:scale-105"
+            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>

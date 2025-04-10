@@ -50,27 +50,26 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="relative bg-fixed bg-parl bg-cover bg-opacity-85 animation-slideIn animate-zoom   h-screen w-full md:px-20"
+      className="relative opacity-85 bg-fixed bg-parl bg-cover bg-opacity-85 animation-slideIn animate-zoom   h-screen w-full md:px-20"
     >
-      {circles}
-      <div className="flex flex-col sm:flex-row justify-between w-full items-center md:p-3 md:pt-11 mt-16 sm:mt-1">
-        <div className="m-auto md:mt-10 px-4 md:py-10 flex flex-col gap-2 w-full">
+      {/* {circles} */}
+      <div className="flex flex-col sm:flex-row  justify-between w-full items-center md:p-3 md:pt-11 pt-40 sm:mt-1">
+        <div className="m-auto  md:mt-10 px-4 md:py-10 flex flex-col gap-2 w-full">
           <Reveal>
-            <h1 className="font-extrabold  md:text-9xl text-6xl text-neutral-300 animate-slidein [--slidein-delay:300ms] opacity-0">
-              Hey, I&apos;m Khalid
-              <span className="text-9xl font-extrabold text-lime-400">.</span>
+            <h1 className="font-extrabold  md:text-6xl text-6xl text-orange-400 animate-slidein [--slidein-delay:300ms] opacity-0 border-b-2 w-fit  border-b-neutral-100">
+              HYDRATECH
+              <span className="text-7xl font-extrabold text-orange-200">.</span>
             </h1>
-            <h1 className="font-bold md:text-7xl text-3xl bg-gradient-to-t from-lime-500 to-cyan-800 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
-              Frontend Engineer
+            <h1 className="font-bold md:text-3xl text-3xl bg-gradient-to-l from-orange-200 to-orange-500 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
+              HOMELAND SECURITY
             </h1>
           </Reveal>
           <Reveal>
-            <span className="mt-4 text-gray-300  font-semibold animate-slidein [--slidein-delay:700ms] opacity-0 md:text-xl">
-              Welcome to my digital workshop, where frontend tech
-              <br />
-              brings ideas to life. With every line of code, I prioritize
-              <br />
-              elegance, and effectiveness, crafting inspiring experiences.
+            <span className="mt-4 text-neutral-200/95  font-semibold animate-slidein [--slidein-delay:700ms] opacity-0 md:text-xl">
+            HydraTech is a leading Technology 
+solution provider <br /> specialized in 
+Homeland Security <br /> and power 
+Systems. 
             </span>
           </Reveal>
         </div>

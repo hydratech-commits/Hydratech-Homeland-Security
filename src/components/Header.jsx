@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link as ScrollLink } from "react-scroll";
+
+import Logo from "../assets/hydratech.png";
 import useTheme from "../context/theme";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +23,10 @@ function Header() {
   return (
     <div
       className={` ${
-        themeMode === "dark" ? "bg-neutral-800 text-neutral-300" : "bg-black"
+        themeMode === "dark" ? "bg-neutral-800 text-neutral-300" : "bg-neutral-800"
       } flex justify-between items-center mx-auto px-2 sm:px-4 sm:py-5 py-6 sticky top-0 w-full z-50  border-b sm:border-none border-gray-300 `}
     >
-      <div className="font-bold text-xl sm:text-3xl text-gray-400 cursor-pointer transition-all duration-200 ">
+      <div className="W-12 font-bold text-SM sm:text-xl text-gray-400 cursor-pointer transition-all duration-200 ">
         <ScrollLink
           to="hero"
           spy={true}
@@ -33,12 +35,7 @@ function Header() {
           duration={200}
           onClick={handleLinkClick}
         >
-          <span className="fixed top-5">
-            <span className="bg-lime-400 p-1 rounded-full text-2xl sm:text-4xl font-semibold text-gray-500">
-              Kh
-            </span>
-            alid
-          </span>
+          <img src={Logo} alt="" className=" bg-neutral-200 shadow-md shadow-orange-500 md:w-86 rounded-sm w-40"  />
         </ScrollLink>
       </div>
       <div className="hidden md:flex">
@@ -49,10 +46,10 @@ function Header() {
           {isOpen ? (
             <FontAwesomeIcon
               icon={faTimes}
-              className="absolute right-2 top-5 text-3xl text-lime-400"
+              className="absolute right-2 top-5 text-3xl text-orange-400"
             />
           ) : (
-            <FontAwesomeIcon icon={faBars} className="text-2xl text-lime-400" />
+            <FontAwesomeIcon icon={faBars} className="text-2xl text-orange-400" />
           )}
         </button>
       </div>

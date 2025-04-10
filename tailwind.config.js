@@ -1,5 +1,5 @@
 import { animate, transform } from "framer-motion";
-import Framer from "./src/assets/framer";
+import Framer from "./src/assets/hero";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        parl: 'url("./assets/Framer.jpg")',
+        parl: 'url("./assets/framer1.avif")',
       },
 
       keyframes: {

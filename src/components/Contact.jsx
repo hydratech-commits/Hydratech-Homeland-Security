@@ -55,7 +55,7 @@ function Contact() {
         </span>
         <br />
         <span className=" sm:text-2xl font-bold text-lime-400 mb-3">
-          +91 7006602813
+        +973 17333375
         </span>
         <div className="flex justify-center items-center gap-x-4 text-2xl w-full ">
           <a
@@ -128,11 +128,11 @@ function Contact() {
             <span className="text-neutral-300 text-2xl font-bold ">Or</span>{" "}
             <br />
             <span className="text-neutral-400 text-base px-4">
-              Shoot me an email if you want to connect!
+              Shoot us an email if you want to connect!
             </span>
             <span className=" flex justify-center items-center gap-x-2 md:text-2xl font-semibold  text-neutral-400 mt-3">
               {" "}
-              <IoMdMail className=" text-lime-400" /> khalidshakeel46@gmail.com
+              <IoMdMail className=" text-lime-400" /> info@hydratech.bh
             </span>
           </div>
         </Reveal>
