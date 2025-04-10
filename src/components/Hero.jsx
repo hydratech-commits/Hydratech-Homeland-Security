@@ -67,10 +67,13 @@ function Hero() {
           </Reveal>
           <Reveal>
             <span className=" text-neutral-200/95  font-semibold animate-slidein [--slidein-delay:700ms] md:text-xl">
-            <span className=" font-bold  border-t-2 rounded-sm border-t-neutral-300  text-xl text-orange-500">HydraTech</span> is a leading Technology 
-solution provider <br /> specialized in 
-Homeland Security <br /> and power 
-Systems. 
+           
+
+
+
+
+<span className=" sm:text-5xl text-neutral-50 ">Secure networks. <br /> Smarter business. <br />
+Let us protect what matters most — <span className=" sm:text-6xl text-orange-500 border-t-2 border-x-8 border-orange-500"> your data </span></span>
             </span>
           </Reveal>
         </div>
