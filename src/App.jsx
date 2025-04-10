@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import { ThemeProvider } from "./context/theme";
+import TestimonialSection16 from "./components/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <About />
         <Portfolio />
+        <TestimonialSection16 />
         <Tech />
         <Contact />
         <Footer />

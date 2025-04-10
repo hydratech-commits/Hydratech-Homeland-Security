@@ -29,7 +29,7 @@ function About() {
       <Reveal>
         <div className="flex justify-center items-center w-full">
           <h2 className="text-3xl w-full md:text-5xl text-neutral-900 font-bold sm:ml-40 ml-8   ">
-            About Us
+            WHO WE ARE
             <span className=" text-5xl font-extrabold text-orange-600">.</span>
           </h2>
           <hr className=" w-full border border-neutral-950 text-neutral-800 mr-8 mt-9" />
@@ -38,10 +38,10 @@ function About() {
 
       <div className="mt-3">
         <Reveal>
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6 sm:px-36 text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold text-4xl border-b-2  border-b-orange-500">WE ARE 
+          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-1  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
+           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500">WE ARE 
            PROFESSIONAL</span> <span>
-           HydraTech is a leading Technology 
+          <span className=" font-bold  border-b-2 rounded-[35px_2px_70px_15px] p-1 border-b-neutral-400 text-xl text-orange-600">HydraTech</span>  is a leading Technology 
 solution provider specialized in 
 Homeland Security and power 
 Systems. We deliver advance security 
@@ -53,8 +53,8 @@ mission – critical solutions.
             </span>
           </div>
 
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6 sm:px-36 text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold text-4xl border-b-2  border-b-orange-500"> WE ARE 
+          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
+           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500"> WE ARE 
            CREATIVE</span> <span>
            Our mission is providing fully 
 integrated, turn-key solutions for our 
@@ -62,10 +62,10 @@ nation’s security
             </span>
           </div>
 
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6 sm:px-36 text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold text-4xl border-b-2  border-b-orange-500"> WE ARE 
+          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
+           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500"> WE ARE 
            TALENTED</span> <span>
-           At HydraTech, talent delivers our 
+           At <span className=" font-bold  border-b-2 rounded-[35px_2px_70px_15px] p-1 border-b-neutral-400 text-xl text-orange-600">HydraTech</span> talent delivers our 
 success. Our Team of experts brings 
 innovation, precision, and deep industry 
 knowledge to every project. Whether in 

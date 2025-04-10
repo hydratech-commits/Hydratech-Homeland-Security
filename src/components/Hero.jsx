@@ -50,23 +50,24 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="relative opacity-85 bg-fixed bg-parl bg-cover bg-opacity-85 animation-slideIn animate-zoom   h-screen w-full md:px-20"
+      className="relative opacity-70 bg-fixed bg-parl bg-cover bg-opacity-85 animation-slideIn animate-zoom   h-screen w-full md:px-20"
     >
       {/* {circles} */}
       <div className="flex flex-col sm:flex-row  justify-between w-full items-center md:p-3 md:pt-11 pt-40 sm:mt-1">
         <div className="m-auto  md:mt-10 px-4 md:py-10 flex flex-col gap-2 w-full">
           <Reveal>
-            <h1 className="font-extrabold  md:text-6xl text-6xl text-orange-400 animate-slidein [--slidein-delay:300ms] opacity-0 border-b-2 w-fit  border-b-neutral-100">
-              HYDRATECH
-              <span className="text-7xl font-extrabold text-orange-200">.</span>
+            <div className="flex flex-col gap-2">
+            <h1 className="font-extrabold   md:text-6xl text-6xl w-fit p-2 rounded-sm bg-orange-500 animate-slidein [--slidein-delay:300ms] opacity-0 ">
+            HYDRATECH
+             
             </h1>
-            <h1 className="font-bold md:text-3xl text-3xl bg-gradient-to-l from-orange-200 to-orange-500 text-transparent bg-clip-text overflow-hidden animate-typing whitespace-nowrap">
+            <h1 className="font-bold md:text-3xl w-fit p-2 rounded-sm text-orange-500 bg-neutral-200 text-3xl verflow-hidden ">
               HOMELAND SECURITY
-            </h1>
+            </h1></div>
           </Reveal>
           <Reveal>
-            <span className="mt-4 text-neutral-200/95  font-semibold animate-slidein [--slidein-delay:700ms] opacity-0 md:text-xl">
-            HydraTech is a leading Technology 
+            <span className=" text-neutral-200/95  font-semibold animate-slidein [--slidein-delay:700ms] md:text-xl">
+            <span className=" font-bold  border-t-2 rounded-sm border-t-neutral-300  text-xl text-orange-500">HydraTech</span> is a leading Technology 
 solution provider <br /> specialized in 
 Homeland Security <br /> and power 
 Systems. 

@@ -44,7 +44,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col sm:flex-row justify-center items-center sm:mx-auto gap-x-7  text-gray-400 sm:w-3/4 py-12 mx-4 sm:py-28 mb-8 rounded-md shadow-md shadow-lime-300"
+      className="flex flex-col sm:flex-row justify-center items-center sm:mx-auto gap-x-7  text-gray-400 sm:w-3/4 py-12 mx-4 sm:py-28 mb-8 rounded-md shadow-md shadow-orange-300"
     >
       <div className="flex flex-col justify-between items-center text-2xl sm:text-3xl font-extrabold sm:w-1/3">
         <span>
@@ -54,7 +54,7 @@ function Contact() {
           </span>
         </span>
         <br />
-        <span className=" sm:text-2xl font-bold text-lime-400 mb-3">
+        <span className=" sm:text-2xl font-bold text-orange-400 mb-3">
         +973 17333375
         </span>
         <div className="flex justify-center items-center gap-x-4 text-2xl w-full ">
@@ -86,7 +86,7 @@ function Contact() {
         <form className="flex flex-col " ref={form} onSubmit={sendEmail}>
           <Reveal>
             <h1 className=" text-7xl text-neutral-300 w-full  text-center mb-2 font-extrabold">
-              Contact<span className=" text-lime-400">.</span>
+              Contact<span className=" text-orange-400">.</span>
             </h1>
           </Reveal>
           <div className="flex flex-col sm:flex-row gap-x-2">
@@ -117,7 +117,7 @@ function Contact() {
           <input
             type="submit"
             value="SEND A MESSAGE"
-            className="w-full bg-lime-400 text-black cursor-pointer hover:bg-orange-500 hover:text-gray-300 transition duration-500 text-lg font-bold py-3 rounded-sm "
+            className="w-full bg-orange-400 text-black cursor-pointer hover:bg-orange-500 hover:text-gray-300 transition duration-500 text-lg font-bold py-3 rounded-sm "
           />
           <span className=" text-gray-600 font-semibold">
             {done && "Thanks For Contacting Me"}
@@ -132,7 +132,7 @@ function Contact() {
             </span>
             <span className=" flex justify-center items-center gap-x-2 md:text-2xl font-semibold  text-neutral-400 mt-3">
               {" "}
-              <IoMdMail className=" text-lime-400" /> info@hydratech.bh
+              <IoMdMail className=" text-orange-400" /> info@hydratech.bh
             </span>
           </div>
         </Reveal>

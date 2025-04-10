@@ -23,10 +23,10 @@ function Header() {
   return (
     <div
       className={` ${
-        themeMode === "dark" ? "bg-neutral-800 text-neutral-300" : "bg-neutral-800"
-      } flex justify-between items-center mx-auto px-2 sm:px-4 sm:py-5 py-6 sticky top-0 w-full z-50  border-b sm:border-none border-gray-300 `}
+        themeMode === "dark" ? "bg-neutral-600 text-neutral-300" : "bg-neutral-900 text-neutral-100"
+      } flex  justify-between items-center mx-auto px-2 sm:px-4 sm:py-5 py-6 sticky top-0 w-full z-50  border-b sm:border-none border-gray-300 `}
     >
-      <div className="W-12 font-bold text-SM sm:text-xl text-gray-400 cursor-pointer transition-all duration-200 ">
+      <div className="W-12 font-bold text-SM sm:text-xl text-gray-100 cursor-pointer transition-all duration-200 ">
         <ScrollLink
           to="hero"
           spy={true}
@@ -35,7 +35,7 @@ function Header() {
           duration={200}
           onClick={handleLinkClick}
         >
-          <img src={Logo} alt="" className=" bg-neutral-200 shadow-md shadow-orange-500 md:w-86 rounded-sm w-40"  />
+          <img src={Logo} alt="" className=" bg-neutral-600/10 shadow-md shadow-orange-500 md:w-86 rounded-sm w-32"  />
         </ScrollLink>
       </div>
       <div className="hidden md:flex">
@@ -54,7 +54,8 @@ function Header() {
         </button>
       </div>
       {isOpen && (
-        <div className="flex flex-wrap basis-full items-center h-fit">
+        <div className=" h-full
+         flex flex-col flex-wrap basis-full items-center ">
           <Navbar closeMenu={closeMenu} />
         </div>
       )}

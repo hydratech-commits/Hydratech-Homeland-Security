@@ -18,7 +18,7 @@ function Navbar({ closeMenu }) {
     <div className="">
       <nav>
         <ul className="flex flex-col sm:flex-row flex-wrap z-20 sm:justify-center justify-end sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">
-          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="about"
               spy={true}
@@ -30,7 +30,7 @@ function Navbar({ closeMenu }) {
               About
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
+          <li className="hover:text-neutral-400  hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
               to="portfolio"
               spy={true}
@@ -42,9 +42,9 @@ function Navbar({ closeMenu }) {
               Projects
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105 cursor-pointer">
             <ScrollLink
-              to="technologies"
+              to="services"
               spy={true}
               smooth={true}
               offset={-290}
@@ -54,17 +54,20 @@ function Navbar({ closeMenu }) {
               Services
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 text-orange-500 hover:scale-105 cursor-pointer">
-            <a
-              href={Resume}
-              target="_blank"
-              rel="noopener noreferrer"
+         
+          <li className="hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2 text-orange-500  cursor-pointer hover:">
+            <ScrollLink
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-310}
+              duration={200}
               onClick={handleLinkClick}
             >
               Testimonials
-            </a>
-          </li>
-          <li className=" hover:text-neutral-400 text-orange-500  cursor-pointer  rounded-md px-3">
+            </ScrollLink>
+          </li>{" "}
+          <li className=" hover:scale-105 hover:text-neutral-600 text-neutral-100 bg-orange-500  cursor-pointer  rounded-sm px-3">
             <ScrollLink
               to="contact"
               spy={true}
@@ -82,7 +85,7 @@ function Navbar({ closeMenu }) {
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
+            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -90,7 +93,7 @@ function Navbar({ closeMenu }) {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
+            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -98,7 +101,7 @@ function Navbar({ closeMenu }) {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-neutral-400 text-orange-500 hover:scale-105"
+            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
