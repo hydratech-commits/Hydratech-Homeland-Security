@@ -54,25 +54,23 @@ const testimonials = [
 
 export function TestimonialSection16() {
   return (
-    <
-        section
-        id="testimonials" className="px-8 py-10 lg:py-28">
-        <div className="container mx-auto">
- 
-<div className="flex flex-col justify-center items-center gap-x-7 mb-8">
-        <Typography
-          variant="h2"
-          className="mb-4 !text-2xl lg:!text-4xl text-neutral-200 bg-orange-500 w-fit p-2 rounded-sm text-center font-bold"
-        >
-          The heartfelt testimonials of our community
-        </Typography>
-        <Typography
-          variant="lead"
-          className="max-w-3xl mx-auto !text-neutral-300 mb-10 lg:mb-20"
-        >
-          From life-enhancing gadgets to unparalleled customer support, and
-          transformative learning opportunities.
-        </Typography></div>
+    <section id="testimonials" className="px-8 py-10 lg:py-28">
+      <div className="container mx-auto">
+        <div className="flex flex-col justify-center items-center gap-x-7 mb-8">
+          <Typography
+            variant="h2"
+            className="mb-4 !text-2xl lg:!text-4xl text-neutral-200 bg-[#fb5c2c] w-fit p-2 rounded-sm text-center font-bold"
+          >
+            The heartfelt testimonials of our community
+          </Typography>
+          <Typography
+            variant="lead"
+            className="max-w-3xl mx-auto !text-neutral-300 mb-10 lg:mb-20"
+          >
+            From life-enhancing gadgets to unparalleled customer support, and
+            transformative learning opportunities.
+          </Typography>
+        </div>
         <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
           {testimonials.map((props, key) => (
             <TestimonialCard key={key} {...props} />
