@@ -17,9 +17,9 @@ function Navbar({ closeMenu }) {
   }, []);
 
   const navItems = [
+    { label: "Home", to: "hero", offset: 250 },
     { label: "About", to: "about", offset: 250 },
-    { label: "Projects", to: "portfolio", offset: -120 },
-    { label: "Services", to: "services", offset: -290 },
+    { label: "Our Solutions", to: "services", offset: -290 },
     { label: "Careers", to: "careers", offset: -310 },
   ];
 
