@@ -15,10 +15,10 @@ function Navbar({ closeMenu }) {
   };
 
   return (
-    <div className=" flex flex-col md:flex-row justify-between items-center sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">  
+    <div className=" flex flex-col md:flex-row justify-between items-center sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">
       <nav>
         <ul className="flex flex-col sm:flex-row flex-wrap z-20 sm:justify-center justify-end sm:gap-x-4 gap-x-2 font-semibold sm:text-base mt-5 sm:mt-0  sm:mr-11 text-xl py-8 sm:py-0 gap-y-5 sm:gap-y-0 [&_li]:text-neutral-600">
-          <li className=" hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2  text-orange-500 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:border-b-[#fb5c2c]hover:border-b-2  text-[#fb5c2c] hover:scale-105 cursor-pointer">
             <ScrollLink
               to="about"
               spy={true}
@@ -30,7 +30,7 @@ function Navbar({ closeMenu }) {
               About
             </ScrollLink>
           </li>
-          <li className="hover:text-neutral-400  hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105 cursor-pointer">
+          <li className="hover:text-neutral-400  hover:border-b-[#fb5c2c] hover:border-b-2  text-[#fb5c2c] hover:scale-105 cursor-pointer">
             <ScrollLink
               to="portfolio"
               spy={true}
@@ -42,7 +42,7 @@ function Navbar({ closeMenu }) {
               Projects
             </ScrollLink>
           </li>
-          <li className=" hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105 cursor-pointer">
+          <li className=" hover:text-neutral-400 hover:border-b-[#fb5c2c] hover:border-b-2 text-[#fb5c2c] hover:scale-105 cursor-pointer">
             <ScrollLink
               to="services"
               spy={true}
@@ -54,8 +54,7 @@ function Navbar({ closeMenu }) {
               Services
             </ScrollLink>
           </li>
-         
-          <li className="hover:text-neutral-400 hover:border-b-orange-500 hover:border-b-2 text-orange-500  cursor-pointer hover:">
+          <li className="hover:text-neutral-400 hover:border-b-[#fb5c2c] hover:border-b-2 text-[#fb5c2c]  cursor-pointer hover:">
             <ScrollLink
               to="testimonials"
               spy={true}
@@ -67,7 +66,7 @@ function Navbar({ closeMenu }) {
               Testimonials
             </ScrollLink>
           </li>{" "}
-          <li className=" hover:scale-105 hover:text-neutral-600 text-neutral-100 bg-orange-500  cursor-pointer  rounded-sm px-3">
+          <li className=" hover:scale-105 hover:text-neutral-800 text-[#fb5c2c] bg-[#f4f5f6]  cursor-pointer  rounded-sm px-3 ">
             <ScrollLink
               to="contact"
               spy={true}
@@ -75,6 +74,7 @@ function Navbar({ closeMenu }) {
               offset={-310}
               duration={200}
               onClick={handleLinkClick}
+              className=" text-[#fb5c2c]"
             >
               Contact
             </ScrollLink>
@@ -85,7 +85,7 @@ function Navbar({ closeMenu }) {
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
+            className=" hover:border-b-[#a9a8a8] hover:border-b-2 text-[#dad7d6]  hover:scale-105"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -93,17 +93,9 @@ function Navbar({ closeMenu }) {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
+            className=" hover:border-b-[#a9a8a8] hover:border-b-2 text-[#dad7d6]  hover:scale-105"
           >
             <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" hover:border-b-orange-500 hover:border-b-2 text-orange-500 text-orange-500 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
       </nav>

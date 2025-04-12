@@ -15,26 +15,29 @@ function Header() {
   const closeMenu = () => setIsOpen(false);
   const handleLinkClick = () => closeMenu();
 
-  // Detect scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const baseBg = themeMode === "dark" ? "bg-neutral-600" : "bg-neutral-900";
-  const scrolledBg = "bg-white text-neutral-900 shadow-md";
-  const navBg = isScrolled ? scrolledBg : `${baseBg} text-neutral-100`;
+  const baseBg = themeMode === "dark" ? "bg-neutral-700" : "bg-[#fb5c2c]";
+  const baseText = "text-white";
+
+  const scrolledBg = "bg-white shadow-md";
+  const scrolledText = "text-neutral-900";
+
+  const navBg = isScrolled ? scrolledBg : baseBg;
+  const navText = isScrolled ? scrolledText : baseText;
 
   return (
     <div
-      className={`transition-all duration-300 ease-in-out ${navBg} flex justify-between items-center mx-auto px-4 py-6 sticky top-0 w-full z-50`}
+      className={`transition-all duration-300 ease-in-out ${navBg} ${navText} flex justify-between items-center mx-auto px-4 py-6 sticky top-0 w-full z-50`}
     >
       {/* Logo */}
-      <div className="w-32 cursor-pointer">
+      <div className="w-32 sm:w-40 cursor-pointer">
         <ScrollLink
           to="hero"
           spy={true}
@@ -46,7 +49,11 @@ function Header() {
           <img
             src={Logo}
             alt="Logo"
-            className="bg-neutral-600/10 shadow-md shadow-orange-500 rounded-sm"
+            className={`shadow-md w-96 sm:w-96 rounded-sm ${
+              isScrolled
+                ? "bg-[#fb5c2c] shadow-[#fb5c2c] "
+                : "bg-white shadow-neutral-400 "
+            }`}
           />
         </ScrollLink>
       </div>
@@ -61,7 +68,9 @@ function Header() {
         <button onClick={toggleMenu}>
           <FontAwesomeIcon
             icon={isOpen ? faTimes : faBars}
-            className="text-3xl text-orange-400"
+            className={`text-3xl ${
+              isScrolled ? "text-[#fb5c2c]" : "text-white"
+            }`}
           />
         </button>
       </div>

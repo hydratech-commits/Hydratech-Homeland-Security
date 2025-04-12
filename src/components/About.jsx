@@ -7,143 +7,108 @@ function About() {
   return (
     <div
       id="about"
-      className={`flex flex-col justify-start  sm:py-9 ${
+      className={`flex flex-col justify-start sm:py-9 py-20 ${
         themeMode === "dark"
-          ? "bg-neutral-800 text-neutral-300"
-          : "bg-neutral-100 text-neutral-900"
-      } py-28`}
+          ? "bg-[#4c4c54] text-[#adb3bd]"
+          : "bg-[#adb3bd] text-[#4c4c54]"
+      }`}
     >
-      <div className={`custom-shape-divider-bottom-1715279379 `}>
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="shape-fill bg-orange-500"
-          ></path>
-        </svg>
-      </div>
       <Reveal>
-        <div className="flex justify-center items-center w-full">
-          <h2 className="text-3xl w-full md:text-5xl text-neutral-900 font-bold sm:ml-40 ml-8   ">
+        <div className=" mt-6 mb-12 border-x-4 border-x-[#fb5c2c] border-t-8 border-t-[#fb5c2c] py-7 mx-2 sm:mx-5 text-neutral-900 flex flex-col justify-center items-start px-8  sm:px-28 w-5/6">
+          {" "}
+          <span className=" text-[#fb5c2c] font-extrabold text-2xl sm:text-5xl border-t-2   border-t-[#747c7c]">
+            HydraTech
+          </span>{" "}
+          is a dynamic and innovative company dedicated to delivering advanced
+          security and technology solutions. With a commitment to excellence,
+          HydraTech has recently forged a strategic partnership with ETIMAD
+          Holding, a leading UAE-based conglomerate specializing in Homeland
+          Security solutions. Headquartered in the UAE, Etimad Holding operates
+          through 11 subsidiaries, each a leader in its respective field,
+          offering expertise in:
+          <ol className=" font-bold text-xl list-disc">
+            <li>IT and power infrastructure</li>
+            <li>Project management</li>
+            <li>Critical security infrastructure</li>
+            <li>System integration</li>
+            <li>Software and hardware solutions</li>
+            <li>Integrated logistics solutions</li>
+            <li>Maintenance</li>
+          </ol>
+          This partnership empowers HydraTech by integrating ETIMAD’s
+          cutting-edge technologies and capabilities, enhancing our expertise in
+          security solutions. To ensure a seamless transfer of knowledge and
+          operational excellence, Etimad has appointed one of its General
+          Managers to oversee HydraTech’s operations. Through our collaboration
+          with Etimad, HydraTech is positioned as a trusted leader in security
+          and technology solutions, driving innovation and safeguarding critical
+          infrastructure across the UAE and beyond. For more information on our
+          expertise and solutions, connect with us today.
+        </div>
+      </Reveal>
+      <Reveal>
+        <div className="flex flex-col sm:flex-row justify-center items-center w-full px-6 sm:px-0">
+          <h2 className="text-2xl sm:text-5xl font-bold w-full sm:w-auto sm:ml-40 mb-4 sm:mb-0 text-[#4c4c54]">
             WHO WE ARE
-            <span className=" text-5xl font-extrabold text-orange-600">.</span>
+            <span className="text-4xl sm:text-5xl font-extrabold text-orange-600">
+              .
+            </span>
           </h2>
-          <hr className=" w-full border border-neutral-950 text-neutral-800 mr-8 mt-9" />
+          <hr className="w-full border border-[#6e7275] sm:mr-8 mt-2 sm:mt-9" />
         </div>
       </Reveal>
 
-      <div className="mt-3">
+      <div className="mt-5 space-y-10">
         <Reveal>
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-1  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500">WE ARE 
-           PROFESSIONAL</span> <span>
-          <span className=" font-bold  border-b-2 rounded-[35px_2px_70px_15px] p-1 border-b-neutral-400 text-xl text-orange-600">HydraTech</span>  is a leading Technology 
-solution provider specialized in 
-Homeland Security and power 
-Systems. We deliver advance security 
-Technologies, Surveillance Systems, 
-and Critical infrastructure protection 
-ensuring national safety. HydraTech 
-empowers industries with cutting edge, 
-mission – critical solutions.
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
+            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
+              WE ARE PROFESSIONAL
             </span>
-          </div>
-
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500"> WE ARE 
-           CREATIVE</span> <span>
-           Our mission is providing fully 
-integrated, turn-key solutions for our 
-nation’s security
-            </span>
-          </div>
-
-          <div className=" flex justify-center items-center gap-x-7  sm:p-12 px-6  text-neutral-900/90 text-sm md:text-base font-semibold mb-8  ">
-           <span className=" font-bold p-8 text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-slate-400  border-b-orange-500"> WE ARE 
-           TALENTED</span> <span>
-           At <span className=" font-bold  border-b-2 rounded-[35px_2px_70px_15px] p-1 border-b-neutral-400 text-xl text-orange-600">HydraTech</span> talent delivers our 
-success. Our Team of experts brings 
-innovation, precision, and deep industry 
-knowledge to every project. Whether in 
-Homeland Security or Power Systems(LV 
-& HV). We excel in delivering cutting
-edge solutions that safeguard nations 
-and power critical infrastructure. With 
-expertise, passion, and a commitment 
-to excellence, we turn challenges into 
-opportunities.
-            </span>
+            <p>
+              <span className="font-bold border-b-2 rounded-[35px_2px_70px_15px] px-1 border-b-[#6e7275] text-lg text-orange-600">
+                HydraTech
+              </span>{" "}
+              is a leading provider of advanced technology solutions,
+              specializing in Homeland Security and Power Systems. We deliver
+              cutting-edge surveillance systems, critical infrastructure
+              protection, and integrated solutions that enhance national
+              security and industrial efficiency.
+            </p>
           </div>
         </Reveal>
 
-        <div className=" flex flex-col relative before:absolute before:top-2 before:left-0 before:bottom-0 before:w-2 before:bg-gray-600 before:rounded-full sm:ml-32 ml-1 ">
-          {/* <Reveal>
-            <div className="sm:ml-4 ml-2 relative ">
-              <h3 className=" font-bold absolute text-xl -left-20 translate-y-1">
-                2024
-              </h3>
+        <Reveal>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
+            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
+              WE ARE CREATIVE
+            </span>
+            <p>
+              Our mission is to provide innovative, turnkey solutions that
+              address the complex challenges of national security. From design
+              to deployment, HydraTech delivers fully integrated systems
+              tailored to meet unique operational needs.
+            </p>
+          </div>
+        </Reveal>
 
-              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5 z-40"></span>
-                Web Development Intern{" "}
-                <span className="  sm:block sm:text-md text-xs font-semibold">
-                  &nbsp; &nbsp;May 2024 - June 2024
-                </span>
-              </h2>
-              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-                Codsoft Technologies
-              </h3>
-              <span className=" mx-auto px-8 py-3">
-                Diving deep into the world of React development as an intern,
-                eager to learn, grow, and contribute to cutting-edge projects
+        <Reveal>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
+            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
+              WE ARE TALENTED
+            </span>
+            <p>
+              At{" "}
+              <span className="font-bold border-b-2 rounded-[35px_2px_70px_15px] px-1 border-b-[#6e7275] text-lg text-orange-600">
+                HydraTech
               </span>
-            </div>
-          </Reveal> */}
-          {/* <Reveal>
-            <div className="sm:ml-4 ml-2 relative mt-5">
-              <h3 className=" font-bold absolute text-xl -left-20">2024</h3>
-
-              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
-                Web Development Intern{" "}
-                <span className=" sm:block sm:text-md text-xs font-semibold">
-                  &nbsp; &nbsp;Apr 2024-May 2024
-                </span>
-              </h2>
-              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-                Oasis Infobyte
-              </h3>
-              <span className="ml-8 mx-12">
-                Successfully completed a dynamic web development internship,
-                delivering three projects powered by React, Tailwind CSS, and
-                advanced state management.
-              </span>
-            </div>
-          </Reveal>
-          <Reveal>
-            <div className="sm:ml-4 ml-2 relative mt-5">
-              <h3 className=" font-bold absolute text-xl -left-20">2021</h3>
-              <h2 className="sm:text-2xl font-bold flex justify-start items-center">
-                <span className="relative bg-blue-500 rounded-full h-4 w-4 block mx-2 sm:-left-7 -left-5"></span>
-                B.tech (ECE){" "}
-                <span className="sm:block sm:text-md text-xs font-semibold">
-                  &nbsp; &nbsp;Aug 2017 - May 2021
-                </span>
-              </h2>
-              <h3 className=" sm:text-xl font-semibold mb-2 ml-8">
-                Punjab Technical University
-              </h3>
-              <span className=" ml-8 mx-12">
-                Graduated from Punjab Technical University in Electronics &
-                Communication Engineering.
-              </span>
-            </div>
-          </Reveal> */}
-        </div>
+              , our strength lies in our people. Our expert team brings deep
+              industry knowledge, precision, and innovation to every project.
+              Whether in Homeland Security or Power Systems (LV & HV), we are
+              driven by a passion to create impactful solutions that power
+              nations and protect communities.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </div>
   );
