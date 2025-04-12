@@ -2,7 +2,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 function Footer() {
-  const sitemapLinks = ["hero", "about", "services", "portfolio", "contact"];
+  const sitemapLinks = ["careers","hero", "about", "services", "portfolio", "contact", ];
   const exploreLinks = [
     "Careers",
     "Cybersecurity Services",

@@ -62,9 +62,9 @@ const cardVariants = {
 
 export default function AdvancedCompanyServices() {
   return (
-    <section id="services" className="bg-white py-16 px-6 md:px-12 lg:px-24">
+    <section id="services" className="bg-  py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+        <h2 className="text-4xl font-extrabold text-gray-300 mb-4">
           What We Offer
         </h2>
         <p className="text-gray-600 mb-12 text-lg">

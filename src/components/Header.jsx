@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link as ScrollLink } from "react-scroll";
-import Logo from "../assets/hydratech.png";
+import Logo from "../assets/Logo4.svg";
 import useTheme from "../context/theme";
 
 function Header() {
@@ -31,32 +31,40 @@ function Header() {
 
   const navBg = isScrolled ? scrolledBg : baseBg;
   const navText = isScrolled ? scrolledText : baseText;
-
+ 
   return (
     <div
       className={`transition-all duration-300 ease-in-out ${navBg} ${navText} flex justify-between items-center mx-auto px-4 py-6 sticky top-0 w-full z-50`}
     >
       {/* Logo */}
-      <div className="w-32 sm:w-40 cursor-pointer">
-        <ScrollLink
-          to="hero"
-          spy={true}
-          smooth={true}
-          offset={-250}
-          duration={200}
-          onClick={handleLinkClick}
-        >
-          <img
-            src={Logo}
-            alt="Logo"
-            className={`shadow-md w-96 sm:w-96 rounded-sm ${
-              isScrolled
-                ? "bg-[#fb5c2c] shadow-[#fb5c2c] "
-                : "bg-white shadow-neutral-400 "
-            }`}
-          />
-        </ScrollLink>
-      </div>
+      <div className={`w-32 sm:w-40 cursor-pointer`}>
+  <ScrollLink
+    to="hero"
+    spy={true}
+    smooth={true}
+    offset={-250}
+    duration={200}
+    onClick={handleLinkClick}
+  >
+    <div className="relative w-28 sm:w-40 shadow-md rounded-sm bg-current">
+      {/* Top border on right side, half inside and half outside */}
+      <div
+        className={`absolute top-[-10px] right-[-18px] sm:right-[-22px] w-[36px] sm:w-[45px] h-[6px] ${
+          isScrolled ? "bg-[#fb5c2c]" : "bg-gray-500"
+        } rounded-tr-sm`}
+      />
+
+      {/* Logo image */}
+      <img
+        src={Logo}
+        alt="Logo"
+        className="w-full h-auto rounded-sm"
+      />
+    </div>
+  </ScrollLink>
+</div>
+
+
 
       {/* Desktop Navbar */}
       <div className="hidden md:flex">
@@ -67,7 +75,7 @@ function Header() {
       <div className="md:hidden z-50">
         <button onClick={toggleMenu}>
           <FontAwesomeIcon
-            icon={isOpen ? faTimes : faBars}
+            icon={isOpen ? faTimes : faBars} // Here we switch between faTimes and faBars
             className={`text-3xl ${
               isScrolled ? "text-[#fb5c2c]" : "text-white"
             }`}

@@ -1,114 +1,121 @@
 import React from "react";
 import Reveal from "./Reveal";
 import useTheme from "../context/theme";
+import ProfessionalImg from "../assets/professional.jpg";
+import CreativeImg from "../assets/creative.jpg";
+import TalentedImg from "../assets/talented.jpg";
+import { FaServer, FaProjectDiagram, FaShieldAlt, FaCogs, FaLaptopCode, FaTruck, FaTools } from "react-icons/fa";
 
 function About() {
   const { themeMode } = useTheme();
+  const isDark = themeMode === "dark";
+
+  const attributes = [
+    {
+      title: "PROFESSIONAL",
+      image: ProfessionalImg,
+      description: (
+        <>
+          <span className="font-bold text-orange-600">HydraTech</span> is a leading provider
+          of advanced technology solutions, specializing in Homeland Security and Power
+          Systems. We deliver surveillance systems, critical infrastructure protection,
+          and integrated solutions that enhance national security.
+        </>
+      )
+    },
+    {
+      title: "CREATIVE",
+      image: CreativeImg,
+      flip: true,
+      description: (
+        <>
+          Our mission is to offer turnkey, innovative solutions for complex security
+          challenges. From design to deployment, HydraTech delivers customized systems
+          tailored to mission-specific needs.
+        </>
+      )
+    },
+    {
+      title: "TALENTED",
+      image: TalentedImg,
+      description: (
+        <>
+          At <span className="font-bold text-orange-600">HydraTech</span>, our strength is
+          our people. Our team brings industry expertise and innovation to projects
+          spanning Homeland Security and Power Systems, delivering solutions that
+          protect and empower.
+        </>
+      )
+    }
+  ];
+
+  const services = [
+    { icon: <FaServer className="text-[#fb5c2c]" />, text: "IT and power infrastructure" },
+    { icon: <FaProjectDiagram className="text-[#fb5c2c]" />, text: "Project management" },
+    { icon: <FaShieldAlt className="text-[#fb5c2c]" />, text: "Critical security infrastructure" },
+    { icon: <FaCogs className="text-[#fb5c2c]" />, text: "System integration" },
+    { icon: <FaLaptopCode className="text-[#fb5c2c]" />, text: "Software and hardware solutions" },
+    { icon: <FaTruck className="text-[#fb5c2c]" />, text: "Integrated logistics solutions" },
+    { icon: <FaTools className="text-[#fb5c2c]" />, text: "Maintenance" }
+  ];
+
   return (
     <div
       id="about"
-      className={`flex flex-col justify-start sm:py-9 py-20 ${
-        themeMode === "dark"
-          ? "bg-[#4c4c54] text-[#adb3bd]"
-          : "bg-[#adb3bd] text-[#4c4c54]"
+      className={`flex flex-col justify-start transition-colors duration-500 sm:py-12 py-20 ${
+        isDark ? "bg-gradient-to-b from-gray-800 to-gray-900 text-gray-200" : "bg-gradient-to-b from-gray-100 to-gray-300 text-gray-800"
       }`}
     >
       <Reveal>
-        <div className=" mt-6 mb-12 border-x-4 border-x-[#fb5c2c] border-t-8 border-t-[#fb5c2c] py-7 mx-2 sm:mx-5 text-neutral-900 flex flex-col justify-center items-start px-8  sm:px-28 w-5/6">
-          {" "}
-          <span className=" text-[#fb5c2c] font-extrabold text-2xl sm:text-5xl border-t-2   border-t-[#747c7c]">
+        <div className="relative mt-6 mb-12 border-l-8 border-t-8 border-[#fb5c2c] rounded-xl py-10 px-6 sm:px-16 mx-4 sm:mx-8 bg-white/10 backdrop-blur-md shadow-xl">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#fb5c2c] mb-4 border-b-4 border-gray-500 inline-block">
             HydraTech
-          </span>{" "}
-          is a dynamic and innovative company dedicated to delivering advanced
-          security and technology solutions. With a commitment to excellence,
-          HydraTech has recently forged a strategic partnership with ETIMAD
-          Holding, a leading UAE-based conglomerate specializing in Homeland
-          Security solutions. Headquartered in the UAE, Etimad Holding operates
-          through 11 subsidiaries, each a leader in its respective field,
-          offering expertise in:
-          <ol className=" font-bold text-xl list-disc">
-            <li>IT and power infrastructure</li>
-            <li>Project management</li>
-            <li>Critical security infrastructure</li>
-            <li>System integration</li>
-            <li>Software and hardware solutions</li>
-            <li>Integrated logistics solutions</li>
-            <li>Maintenance</li>
-          </ol>
-          This partnership empowers HydraTech by integrating ETIMAD’s
-          cutting-edge technologies and capabilities, enhancing our expertise in
-          security solutions. To ensure a seamless transfer of knowledge and
-          operational excellence, Etimad has appointed one of its General
-          Managers to oversee HydraTech’s operations. Through our collaboration
-          with Etimad, HydraTech is positioned as a trusted leader in security
-          and technology solutions, driving innovation and safeguarding critical
-          infrastructure across the UAE and beyond. For more information on our
-          expertise and solutions, connect with us today.
+          </h1>
+          <p className="text-lg leading-relaxed">
+            HydraTech is a dynamic and innovative company dedicated to delivering advanced
+            security and technology solutions. We've recently partnered with <strong>ETIMAD Holding</strong>,
+            a UAE-based conglomerate specializing in Homeland Security. Etimad operates through 11
+            subsidiaries offering:
+          </p>
+          <ul className="ml-6 mt-4 space-y-2 text-base font-medium">
+            {services.map((item, idx) => (
+              <li key={idx} className="flex items-center gap-3">
+                {item.icon} {item.text}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-lg">
+            This collaboration enables HydraTech to leverage ETIMAD’s technologies, enhancing our
+            capabilities in delivering top-tier security systems. With oversight from one of
+            Etimad’s General Managers, we ensure operational excellence and innovation, reinforcing
+            our role as a leader in the industry.
+          </p>
         </div>
       </Reveal>
+
       <Reveal>
-        <div className="flex flex-col sm:flex-row justify-center items-center w-full px-6 sm:px-0">
-          <h2 className="text-2xl sm:text-5xl font-bold w-full sm:w-auto sm:ml-40 mb-4 sm:mb-0 text-[#4c4c54]">
+        <div className="flex flex-col sm:flex-row justify-center items-center w-full px-6 sm:px-0 mt-10">
+          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight w-full sm:w-auto text-[#fb5c2c] mb-2 sm:mb-0">
             WHO WE ARE
-            <span className="text-4xl sm:text-5xl font-extrabold text-orange-600">
-              .
-            </span>
           </h2>
-          <hr className="w-full border border-[#6e7275] sm:mr-8 mt-2 sm:mt-9" />
+          <div className="flex-grow h-1 bg-gradient-to-r from-[#fb5c2c] to-transparent sm:ml-6 mt-4 sm:mt-0" />
         </div>
       </Reveal>
 
-      <div className="mt-5 space-y-10">
-        <Reveal>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
-            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
-              WE ARE PROFESSIONAL
-            </span>
-            <p>
-              <span className="font-bold border-b-2 rounded-[35px_2px_70px_15px] px-1 border-b-[#6e7275] text-lg text-orange-600">
-                HydraTech
-              </span>{" "}
-              is a leading provider of advanced technology solutions,
-              specializing in Homeland Security and Power Systems. We deliver
-              cutting-edge surveillance systems, critical infrastructure
-              protection, and integrated solutions that enhance national
-              security and industrial efficiency.
-            </p>
-          </div>
-        </Reveal>
-
-        <Reveal>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
-            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
-              WE ARE CREATIVE
-            </span>
-            <p>
-              Our mission is to provide innovative, turnkey solutions that
-              address the complex challenges of national security. From design
-              to deployment, HydraTech delivers fully integrated systems
-              tailored to meet unique operational needs.
-            </p>
-          </div>
-        </Reveal>
-
-        <Reveal>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-4 sm:gap-x-7 sm:p-12 px-6 text-sm md:text-base font-semibold text-[#4c4c54]">
-            <span className="font-bold p-4 sm:p-8 text-2xl sm:text-4xl border-b-2 rounded-[35px_2px_70px_15px] bg-[#adb3bd] border-b-orange-500">
-              WE ARE TALENTED
-            </span>
-            <p>
-              At{" "}
-              <span className="font-bold border-b-2 rounded-[35px_2px_70px_15px] px-1 border-b-[#6e7275] text-lg text-orange-600">
-                HydraTech
-              </span>
-              , our strength lies in our people. Our expert team brings deep
-              industry knowledge, precision, and innovation to every project.
-              Whether in Homeland Security or Power Systems (LV & HV), we are
-              driven by a passion to create impactful solutions that power
-              nations and protect communities.
-            </p>
-          </div>
-        </Reveal>
+      <div className="mt-10 space-y-12">
+        {attributes.map(({ title, image, description, flip }) => (
+          <Reveal key={title}>
+            <div className={`flex flex-col ${flip ? 'sm:flex-row-reverse' : 'sm:flex-row'} items-center gap-8 sm:gap-12 sm:px-16 px-6 text-sm md:text-base font-semibold`}>
+              <img src={image} alt={title} className="w-full sm:w-1/3 rounded-2xl shadow-md  shadow-[#fb5c2c] object-cover" />
+              <div className="flex flex-col gap-4">
+                <span className="font-bold py-4 px-6 text-2xl sm:text-4xl rounded-[35px_2px_70px_15px] bg-orange-100 text-[#fb5c2c] border-b-4 border-[#fb5c2c] shadow-md">
+                  WE ARE {title}
+                </span>
+                <p className="text-lg leading-relaxed text-justify">{description}</p>
+              </div>
+            </div>
+          </Reveal>
+        ))}
       </div>
     </div>
   );
