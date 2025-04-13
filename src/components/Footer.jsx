@@ -19,13 +19,13 @@ function Footer() {
             Contact Us
           </h3>
           <p className="text-sm text-[#9fa4b1] leading-6 mb-4">
-            HydraTech Homeland Security
+          HydraTech Homeland Security<br />
+                Floor 44 Room-1 <br />
+                East tower,<br />
+                Bahrain Financial Harbour,<br />
+                Kingdom Of Bahrain
             <br />
-            East tower ,
-            <br />
-            Bahrain Financial Harbour, Kingdom Of Bahrain
-            <br />
-            Phone: +973-17333375
+            Phone: +973-17233339
             <br />
             Email: info@hydratech.bh
           </p>

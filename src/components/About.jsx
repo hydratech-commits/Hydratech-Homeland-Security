@@ -16,7 +16,7 @@ function About() {
       image: ProfessionalImg,
       description: (
         <>
-          <span className="font-bold text-orange-600">HydraTech</span> is a leading provider
+          <span className="font-bold text-[#fb5c2c]">HydraTech</span> is a leading provider
           of advanced technology solutions, specializing in Homeland Security and Power
           Systems. We deliver surveillance systems, critical infrastructure protection,
           and integrated solutions that enhance national security.
@@ -40,7 +40,7 @@ function About() {
       image: TalentedImg,
       description: (
         <>
-          At <span className="font-bold text-orange-600">HydraTech</span>, our strength is
+          At <span className="font-bold text-[#fb5c2c]">HydraTech</span>, our strength is
           our people. Our team brings industry expertise and innovation to projects
           spanning Homeland Security and Power Systems, delivering solutions that
           protect and empower.
@@ -98,7 +98,7 @@ function About() {
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight w-full sm:w-auto text-[#fb5c2c] mb-2 sm:mb-0">
             WHO WE ARE
           </h2>
-          <div className="flex-grow h-1 bg-gradient-to-r from-[#fb5c2c] to-transparent sm:ml-6 mt-4 sm:mt-0" />
+          <div className="flex-grow h-1 bg-gradient-to-r from-[#adb3bd] to-transparent sm:ml-6 mt-4 sm:mt-0" />
         </div>
       </Reveal>
 
@@ -108,7 +108,7 @@ function About() {
             <div className={`flex flex-col ${flip ? 'sm:flex-row-reverse' : 'sm:flex-row'} items-center gap-8 sm:gap-12 sm:px-16 px-6 text-sm md:text-base font-semibold`}>
               <img src={image} alt={title} className="w-full sm:w-1/3 rounded-2xl shadow-md  shadow-[#fb5c2c] object-cover" />
               <div className="flex flex-col gap-4">
-                <span className="font-bold py-4 px-6 text-2xl sm:text-4xl rounded-[35px_2px_70px_15px] bg-orange-100 text-[#fb5c2c] border-b-4 border-[#fb5c2c] shadow-md">
+                <span className="font-bold py-4 px-6 text-2xl sm:text-4xl rounded-[35px_2px_70px_15px] bg-neutral-400/70 text-[#fb5c2c] border-b-4 border-[#fb5c2c] shadow-md">
                   WE ARE {title}
                 </span>
                 <p className="text-lg leading-relaxed text-justify">{description}</p>
