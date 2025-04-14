@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaShieldAlt,
   FaServer,
   FaUserSecret,
   FaArrowRight,
+  FaArrowLeft,
 } from "react-icons/fa";
 
 const jobListings = [
@@ -95,10 +96,17 @@ const cardVariants = {
 };
 
 function Careers() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const jobsPerPage = 2;
+
+  const totalPages = Math.ceil(jobListings.length / jobsPerPage);
+  const startIndex = (currentPage - 1) * jobsPerPage;
+  const currentJobs = jobListings.slice(startIndex, startIndex + jobsPerPage);
+
   return (
     <section
       id="careers"
-      className="min-h-screen px-6 py-16 bg-[#f4f5f6] text-[#1a1a1a]"
+      className="min-h-screen  px-6 py-16 bg-[#f4f5f6] text-[#1a1a1a]"
     >
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -116,7 +124,7 @@ function Careers() {
       </motion.div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {jobListings.map((job, index) => {
+        {currentJobs.map((job, index) => {
           const mailtoLink = `mailto:info@hydratech.bh?subject=Application for ${encodeURIComponent(
             job.title
           )}&body=Dear Hiring Team,%0D%0A%0D%0AI am interested in the ${
@@ -133,7 +141,7 @@ function Careers() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl p-6 relative transition duration-300 overflow-hidden"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl p-6 relative transition duration-300 overflow-hidden "
             >
               <div className="mb-4 flex items-center gap-4">
                 {job.icon}
@@ -165,6 +173,35 @@ function Careers() {
             </motion.div>
           );
         })}
+      </div>
+
+      {/* Pagination controls */}
+      <div className="mt-12 flex justify-center items-center gap-4">
+        <button
+          onClick={() => setCurrentPage((prev) => prev - 1)}
+          disabled={currentPage === 1}
+          className={`p-3 rounded-full text-white ${
+            currentPage === 1
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-[#fb5c2c] hover:bg-[#e14c20]"
+          }`}
+        >
+          <FaArrowLeft />
+        </button>
+        <span className="text-gray-600 font-semibold">
+          Page {currentPage} of {totalPages}
+        </span>
+        <button
+          onClick={() => setCurrentPage((prev) => prev + 1)}
+          disabled={currentPage === totalPages}
+          className={`p-3 rounded-full text-white ${
+            currentPage === totalPages
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-[#fb5c2c] hover:bg-[#e14c20]"
+          }`}
+        >
+          <FaArrowRight />
+        </button>
       </div>
     </section>
   );
