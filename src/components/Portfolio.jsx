@@ -15,7 +15,7 @@ function Portfolio() {
         <div className="flex justify-center items-center w-full mb-6">
           <hr className="w-full border border-[#adb3bd] ml-8" />
           <h2 className="md:text-6xl text-3xl font-bold text-[#efe1e0] mr-8 w-fit">
-            Security Projects
+          Projects
             <span className="text-6xl font-extrabold text-[#fb5c2c]">.</span>
           </h2>
         </div>

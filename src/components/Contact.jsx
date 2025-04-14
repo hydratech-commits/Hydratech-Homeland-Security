@@ -69,7 +69,7 @@ function AdvancedContactForm() {
             </div>
             <div className="flex items-start justify-center gap-3">
               <FontAwesomeIcon icon={faPhone} className="text-[#fb5c2c]" />
-              <span>+973-17333375</span>
+              <span>+973-17233339</span>
             </div>
             <div className="flex items-start gap-3">
               <a

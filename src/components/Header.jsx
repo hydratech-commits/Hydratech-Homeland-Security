@@ -23,7 +23,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const baseBg = themeMode === "dark" ? "bg-neutral-700" : "bg-[#fb5c2c]";
+  const baseBg = themeMode === "dark" ? "bg-neutral-700" : "bg-transparent";
   const baseText = "text-white";
 
   const scrolledBg = "bg-white shadow-md";

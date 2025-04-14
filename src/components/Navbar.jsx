@@ -43,12 +43,12 @@ function Navbar({ closeMenu }) {
               >
                 {label}
               </ScrollLink>
-              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#585858] transition-all duration-300 group-hover:w-full" />
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#fb5c2c] transition-all duration-300 group-hover:w-full" />
             </li>
           ))}
 
           {/* Contact Button */}
-          <li className="relative group overflow-hidden rounded-sm bg-neutral-400">
+          <li className="relative group overflow-hidden rounded-sm bg-[#fb5c2c]">
             <ScrollLink
               to="contact"
               spy={true}
@@ -64,7 +64,7 @@ function Navbar({ closeMenu }) {
             {/* Animated overlay with scroll-based background */}
             <div
               className={`absolute inset-0 z-0 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out ${
-                isScrolled ? "bg-[#f4f5f6]" : "bg-[#fb5c2c]"
+                isScrolled ? "bg-[#f4f5f6]" : "bg-transparent"
               }`}
             />
           </li>
