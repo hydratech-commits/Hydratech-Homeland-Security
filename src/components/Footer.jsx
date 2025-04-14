@@ -2,7 +2,14 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 function Footer() {
-  const sitemapLinks = ["careers","hero", "about", "services", "portfolio", "contact", ];
+  const sitemapLinks = [
+    "careers",
+    "hero",
+    "about",
+    "services",
+    "portfolio",
+    "contact",
+  ];
   const exploreLinks = [
     "Careers",
     "Cybersecurity Services",
@@ -19,11 +26,14 @@ function Footer() {
             Contact Us
           </h3>
           <p className="text-sm text-[#9fa4b1] leading-6 mb-4">
-          HydraTech Homeland Security<br />
-                Floor 44 Room-1 <br />
-                East tower,<br />
-                Bahrain Financial Harbour,<br />
-                Kingdom Of Bahrain
+            HydraTech Homeland Security
+            <br />
+            Floor 44 Room-1 <br />
+            East tower,
+            <br />
+            Bahrain Financial Harbour,
+            <br />
+            Kingdom Of Bahrain
             <br />
             Phone: +973-17233339
             <br />
@@ -32,7 +42,7 @@ function Footer() {
           <div className="rounded overflow-hidden border border-[#6b7373] shadow-lg">
             <iframe
               title="Hydratech Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.748205850144!2d50.57109127395169!3d26.23736978878947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a58b0e7fcf9d%3A0x9f51bd01fae45bad!2sBahrain%20Financial%20Harbour!5e0!3m2!1sen!2sbh!4v1744489232235!5m2!1sen!2sbh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7363596207056!2d50.571444173951626!3d26.237754588773235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a58b15842417%3A0xc79293d8ed74ec31!2sHarbour%20Towers%20East!5e0!3m2!1sen!2sbh!4v1744631350762!5m2!1sen!2sbh"
               width="100%"
               height="180"
               style={{ border: 0 }}

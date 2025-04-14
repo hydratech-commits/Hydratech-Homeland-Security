@@ -14,7 +14,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-
+import Reveal from "./Reveal";
 const testimonials = [
   {
     icon: <Laptop2 className="w-12 h-12 text-[#fb5c2c]" />,
@@ -56,25 +56,29 @@ const testimonials = [
 function TestimonialCard({ icon, title, client, clientInfo }) {
   return (
     <Card shadow={false} className="bg-gray-100/90 rounded-2xl p-6">
-      <CardHeader color="transparent" floated={false} shadow={false}>
-        <Typography color="blue-gray" className="mb-6 text-2xl font-bold">
-          &quot;{title}&quot;
-        </Typography>
-      </CardHeader>
-      <CardBody className="px-4 py-0 flex justify-between items-center">
-        <div>
-          <Typography variant="h6" color="blue-gray">
-            {client}
+      <Reveal>
+        <CardHeader color="transparent" floated={false} shadow={false}>
+          <Typography color="blue-gray" className="mb-6 text-2xl font-bold">
+            &quot;{title}&quot;
           </Typography>
-          <Typography
-            variant="paragraph"
-            className="font-normal !text-neutral-900"
-          >
-            {clientInfo}
-          </Typography>
-        </div>
-        <div>{icon}</div>
-      </CardBody>
+        </CardHeader>
+      </Reveal>
+      <Reveal>
+        <CardBody className="px-4 py-0 flex justify-between items-center">
+          <div>
+            <Typography variant="h6" color="blue-gray">
+              {client}
+            </Typography>
+            <Typography
+              variant="paragraph"
+              className="font-normal !text-neutral-900"
+            >
+              {clientInfo}
+            </Typography>
+          </div>
+          <div>{icon}</div>
+        </CardBody>
+      </Reveal>
     </Card>
   );
 }

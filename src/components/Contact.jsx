@@ -10,8 +10,13 @@ import Reveal from "./Reveal";
 function AdvancedContactForm() {
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError("");
 
     emailjs
       .sendForm(
@@ -31,16 +36,17 @@ function AdvancedContactForm() {
         },
         (error) => {
           console.log(error.text);
-          alert(
+          setError(
             "An error occurred while sending the email. Please try again later."
           );
         }
-      );
+      )
+      .finally(() => setLoading(false));
   };
 
   return (
     <div id="contact" className="bg-gray-950 text-gray-300 py-20 px-4 sm:px-10">
-      <div className="max-w-full mx-auto flex flex-col justify-center items-center  gap-10">
+      <div className="max-w-full mx-auto flex flex-col justify-center items-center gap-10">
         {/* Column 1: Contact Info + Map */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +57,7 @@ function AdvancedContactForm() {
           <h3 className="text-[#fb5c2c] text-lg sm:text-2xl font-semibold sm:font-bold">
             Contact Us
           </h3>
-          <div className="flex flex-col sm:flex-row items-start gap-x-3 justify-center  text-sm text-[#9fa4b1]">
+          <div className="flex flex-col sm:flex-row items-start gap-x-3 justify-center text-sm text-[#9fa4b1]">
             <div className="flex items-start gap-3">
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
@@ -74,7 +80,7 @@ function AdvancedContactForm() {
             <div className="flex items-start gap-3">
               <a
                 href="mailto:info@hydratech.bh"
-                className="flex justify-center items-start gap-x-2 text-lg font-semibold text-neutral-400  hover:underline"
+                className="flex justify-center items-start gap-x-2 text-lg font-semibold text-neutral-400 hover:underline"
               >
                 <IoMdMail className="text-[#fb5c2c]" /> info@hydratech.bh
               </a>
@@ -83,7 +89,7 @@ function AdvancedContactForm() {
           <div className="rounded overflow-hidden border border-[#6b7373] shadow-lg">
             <iframe
               title="Hydratech Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.748205850144!2d50.57109127395169!3d26.23736978878947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a58b0e7fcf9d%3A0x9f51bd01fae45bad!2sBahrain%20Financial%20Harbour!5e0!3m2!1sen!2sbh!4v1744489232235!5m2!1sen!2sbh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7363596207056!2d50.571444173951626!3d26.237754588773235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a58b15842417%3A0xc79293d8ed74ec31!2sHarbour%20Towers%20East!5e0!3m2!1sen!2sbh!4v1744631350762!5m2!1sen!2sbh"
               width="100%"
               height="180"
               style={{ border: 0 }}
@@ -135,12 +141,18 @@ function AdvancedContactForm() {
             ></textarea>
             <input
               type="submit"
-              value="Send Message"
+              value={loading ? "Sending..." : "Send Message"}
               className="bg-[#fb5c2c] hover:bg-[#e84d1f] text-black font-bold py-3 rounded-md col-span-2 cursor-pointer transition duration-300"
+              disabled={loading}
             />
             {done && (
               <p className="text-green-400 text-sm font-semibold mt-2 col-span-2">
                 Thanks for contacting us!
+              </p>
+            )}
+            {error && (
+              <p className="text-red-400 text-sm font-semibold mt-2 col-span-2">
+                {error}
               </p>
             )}
           </form>
@@ -149,7 +161,8 @@ function AdvancedContactForm() {
             <div className="w-full mx-auto flex flex-col justify-center items-center mt-8">
               <span className="text-neutral-300 text-xl font-bold">Or</span>
               <span className="text-neutral-400 text-sm px-4 mt-2">
-                Shoot us an email if you want to connect!
+                For business inquiries or further information, feel free to
+                contact us via email.
               </span>
               <a
                 href="mailto:info@hydratech.bh"
@@ -159,18 +172,11 @@ function AdvancedContactForm() {
               </a>
               <div className="flex justify-center items-center gap-x-4 mt-4 text-2xl">
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/company/hydratechbh/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </div>
             </div>
