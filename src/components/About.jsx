@@ -60,94 +60,103 @@ function About() {
 
   const services = [
     {
-      icon: <FaServer className="text-[#fb5c2c]" />,
+      icon: <FaServer className="text-[#fb5c2c] text-2xl animate-bounce" />,
       text: "IT and power infrastructure",
     },
     {
-      icon: <FaProjectDiagram className="text-[#fb5c2c]" />,
+      icon: <FaProjectDiagram className="text-[#fb5c2c] text-2xl animate-spin-slow" />,
       text: "Project management",
     },
     {
-      icon: <FaShieldAlt className="text-[#fb5c2c]" />,
+      icon: <FaShieldAlt className="text-[#fb5c2c] text-2xl animate-pulse" />,
       text: "Critical security infrastructure",
     },
-    { icon: <FaCogs className="text-[#fb5c2c]" />, text: "System integration" },
     {
-      icon: <FaLaptopCode className="text-[#fb5c2c]" />,
+      icon: <FaCogs className="text-[#fb5c2c] text-2xl animate-gear" />,
+      text: "System integration",
+    },
+    {
+      icon: <FaLaptopCode className="text-[#fb5c2c] text-2xl animate-pulse" />,
       text: "Software and hardware solutions",
     },
     {
-      icon: <FaTruck className="text-[#fb5c2c]" />,
+      icon: <FaTruck className="text-[#fb5c2c] text-2xl animate-bounce" />,
       text: "Integrated logistics solutions",
     },
-    { icon: <FaTools className="text-[#fb5c2c]" />, text: "Maintenance" },
+    {
+      icon: <FaTools className="text-[#fb5c2c] text-2xl animate-spin-slow" />,
+      text: "Maintenance",
+    },
   ];
 
   return (
     <div
       id="about"
-      className={`flex flex-col justify-start transition-colors duration-500 sm:py-12 py-20 ${
+      className={`relative flex flex-col justify-start transition-colors duration-500 sm:py-12 py-20 overflow-hidden z-10 ${
         isDark
-          ? "bg-gradient-to-b from-gray-800 to-gray-900 text-gray-200"
-          : "bg-gradient-to-b from-gray-100 to-gray-300 text-gray-800"
+          ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-200"
+          : "bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 text-gray-800"
       }`}
     >
       <Reveal>
-        <div className="relative mt-6 mb-12 border-l-8 border-t-8 border-[#fb5c2c] rounded-xl py-10 px-6 sm:px-16 mx-4 sm:mx-8 bg-white/10 backdrop-blur-md shadow-xl">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-[#fb5c2c] mb-4 border-b-4 border-gray-500 inline-block">
+        <div className="relative mx-4 sm:mx-8 mt-6 mb-12 border-l-[10px] border-t-[10px] border-[#fb5c2c] rounded-xl p-10 bg-white/30 backdrop-blur-lg shadow-[0_0_40px_#fb5c2c40]">
+          <h1 className="text-5xl sm:text-7xl font-black text-[#fb5c2c] mb-6 tracking-widest animate-text-glow uppercase">
             HydraTech
           </h1>
-          <p className="text-lg leading-relaxed">
-            HydraTech is a dynamic and innovative company dedicated to
-            delivering advanced security and technology solutions. We&apos;ve
-            recently partnered with <strong>ETIMAD Holding</strong>, a UAE-based
-            conglomerate specializing in Homeland Security. Etimad operates
-            through 11 subsidiaries offering:
+          <p className="text-xl leading-loose font-light">
+            HydraTech is a dynamic and innovative company delivering advanced
+            security and technology solutions. We&apos;ve partnered with
+            <strong className=" font-bold"> ETIMAD Holding</strong>, a UAE-based conglomerate
+            specializing in Homeland Security, operating through 11 subsidiaries
+            offering:
           </p>
-          <ul className="ml-6 mt-4 space-y-2 text-base font-medium">
+          <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg font-medium">
             {services.map((item, idx) => (
-              <li key={idx} className="flex items-center gap-3">
-                {item.icon} {item.text}
+              <li key={idx} className="flex items-center gap-4 bg-white/10 px-4 py-3 rounded-xl shadow hover:scale-105 transition-transform">
+                {item.icon}
+                <span>{item.text}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-lg">
-            This collaboration enables HydraTech to leverage ETIMAD&apos;s
+          <p className="mt-6 text-xl">
+            This collaboration enables HydraTech to leverage <strong className=" font-bold"> ETIMAD&apos;s </strong> 
             technologies, enhancing our capabilities in delivering top-tier
-            security systems. With oversight from one of Etimad&apos;s General
-            Managers, we ensure operational excellence and innovation,
-            reinforcing our role as a leader in the industry.
+            security systems. Oversight from one of <strong className=" font-bold"> ETIMAD&apos;s </strong> General Managers
+            ensures operational excellence and innovation, reinforcing our role
+            as a leader in the industry.
           </p>
         </div>
       </Reveal>
 
       <Reveal>
         <div className="flex flex-col sm:flex-row justify-center items-center w-full px-6 sm:px-0 mt-10">
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight w-full sm:w-auto text-[#fb5c2c] mb-2 sm:mb-0">
-            WHO WE ARE
+          <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-wider w-full sm:w-auto text-[#fb5c2c] mb-4 sm:mb-0 animate-slide-in">
+            Who We Are
           </h2>
-          <div className="flex-grow h-1 bg-gradient-to-r from-[#adb3bd] to-transparent sm:ml-6 mt-4 sm:mt-0" />
+          <div className="flex-grow h-1 bg-gradient-to-r from-[#adb3bd] to-transparent sm:ml-6 mt-4 sm:mt-0 rounded-full" />
         </div>
       </Reveal>
 
-      <div className="mt-10 space-y-12">
+      <div className="mt-16 space-y-20">
         {attributes.map(({ title, image, description, flip }) => (
           <Reveal key={title}>
             <div
               className={`flex flex-col ${
                 flip ? "sm:flex-row-reverse" : "sm:flex-row"
-              } items-center gap-8 sm:gap-12 sm:px-16 px-6 text-sm md:text-base font-semibold`}
+              } items-center gap-10 sm:gap-16 px-6 sm:px-16 animate-fade-in-up`}
             >
-              <img
-                src={image}
-                alt={title}
-                className="w-full sm:w-1/3 rounded-2xl shadow-md  shadow-[#fb5c2c] object-cover"
-              />
-              <div className="flex flex-col gap-4">
-                <span className="font-bold py-4 px-6 text-2xl sm:text-4xl rounded-[35px_2px_70px_15px] bg-neutral-400/70 text-[#fb5c2c] border-b-4 border-[#fb5c2c] shadow-md">
-                  WE ARE {title}
+              <div className="w-full sm:w-1/3 overflow-hidden rounded-3xl shadow-2xl shadow-[#fb5c2c99] transform hover:scale-105 transition-transform duration-500">
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col gap-6 max-w-2xl">
+                <span className="font-bold py-4 px-6 text-2xl sm:text-4xl rounded-[35px_2px_70px_15px] bg-neutral-400/70 text-[#fb5c2c] border-b-4 border-[#fb5c2c] shadow-lg">
+                  We Are {title}
                 </span>
-                <p className="text-lg leading-relaxed text-justify">
+                <p className="text-lg leading-relaxed text-justify text-gray-700 dark:text-gray-200">
                   {description}
                 </p>
               </div>

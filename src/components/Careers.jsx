@@ -106,7 +106,7 @@ function Careers() {
   return (
     <section
       id="careers"
-      className="min-h-screen  px-6 py-16 bg-[#f4f5f6] text-[#1a1a1a]"
+      className="min-h-screen  px-6 md:py-40 py-16 bg-[#f4f5f6] text-[#1a1a1a]"
     >
       <motion.div
         initial={{ opacity: 0, y: -30 }}

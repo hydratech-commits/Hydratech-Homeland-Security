@@ -99,7 +99,7 @@ function Footer() {
           smooth={true}
           offset={-70}
           duration={200}
-          className="absolute right-4 top-2 text-[#fb5c2c] text-2xl hover:scale-110 transition cursor-pointer"
+          className="absolute right-2 bottom-0  md:right-4 md:top-2 text-[#fb5c2c] text-2xl hover:scale-110 transition cursor-pointer"
         >
           ▲
         </ScrollLink>

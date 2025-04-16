@@ -25,7 +25,7 @@ function Hero() {
       {/* Local Video Background */}
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-10 mt-[-20%]"
         src={videoSource}
         autoPlay
         loop
@@ -35,8 +35,8 @@ function Hero() {
       <div className="absolute inset-0 bg-black/60 z-0" />
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col justify-center items-start h-full text-center text-[#fb5c2c] px-6">
-        <div className="flex flex-col justify-center items-start w-fit">
+      <div className="relative z-10 flex py-10 sm:py-0  flex-col justify-start sm:justify-center items-start h-full text-center text-[#fb5c2c] md:px-6">
+        <div className="flex flex-col bg-neutral-400 opacity-65 sm:bg-transparent  justify-center items-start w-fit z-40">
           <Reveal>
             <h1 className="text-5xl md:text-6xl font-extrabold border-b-4 border-gray-500 w-fit">HYDRATECH</h1>
           </Reveal>
@@ -46,11 +46,11 @@ function Hero() {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="text-lg md:text-xl mt-4">
+            <p className="text-lg md:text-xl mt-4 text-neutral-900 sm:text-neutral-300 font-semibold">
               Secure networks. <br />
               Smarter business. <br />
               Let us protect what matters most —{" "}
-              <span className="text-black font-bold md:text-2xl bg-white px-2 rounded">
+              <span className="text-black font-bold md:text-2xl bg-[#fb5c2c] md:px-2 rounded">
                 your data
               </span>
             </p>

@@ -37,7 +37,7 @@ function AdvancedContactForm() {
         (error) => {
           console.log(error.text);
           setError(
-            "An error occurred while sending the email. Please try again later."
+            "An error occurred while sending the message. Please try again later."
           );
         }
       )
@@ -45,7 +45,7 @@ function AdvancedContactForm() {
   };
 
   return (
-    <div id="contact" className="bg-gray-950 text-gray-300 py-20 px-4 sm:px-10">
+    <div id="contact" className="bg-gray-950 text-gray-300 py-20 md:py-40 px-4 sm:px-10">
       <div className="max-w-full mx-auto flex flex-col justify-center items-center gap-10">
         {/* Column 1: Contact Info + Map */}
         <motion.div

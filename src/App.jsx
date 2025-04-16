@@ -15,7 +15,7 @@ const Footer = lazy(() => import("./components/Footer"));
 function App() {
   return (
     <ThemeProvider>
-      <div className="text-white bg-zinc-950 h-full">
+      <div className="text-white bg-zinc-950 h-full ">
         <Header />
         <Hero />
 
@@ -25,9 +25,6 @@ function App() {
           }
         >
           <About />
-          <hr className="w-2/3 border border-[#adb3bd] mx-auto" />
-
-          <Portfolio />
           <hr className="w-2/3 border border-[#adb3bd] mx-auto" />
 
           <Services />

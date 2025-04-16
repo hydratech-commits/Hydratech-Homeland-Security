@@ -53,7 +53,7 @@ function Navbar({ closeMenu }) {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-310}
+              offset={-100}
               duration={200}
               onClick={handleLinkClick}
               className="relative z-10 text-[#181818] px-3 py-1 cursor-pointer transition-transform duration-300 hover:scale-105"
