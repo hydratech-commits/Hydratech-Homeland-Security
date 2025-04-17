@@ -100,10 +100,10 @@ function About() {
     >
       <Reveal>
         <div className="relative mx-4 sm:mx-8 mt-6 mb-12 border-l-[10px] border-t-[10px] border-[#fb5c2c] rounded-xl p-10 bg-white/30 backdrop-blur-lg shadow-[0_0_40px_#fb5c2c40]">
-          <h1 className="text-5xl sm:text-7xl font-black text-[#fb5c2c] mb-6 tracking-widest animate-text-glow uppercase">
+          <h1 className="text-3xl sm:text-7xl font-black text-[#fb5c2c] mb-6 tracking-widest animate-text-glow uppercase">
             HydraTech
           </h1>
-          <p className="text-xl leading-loose font-light">
+          <p className="text-xl leading-loose font-light text-neutral-700">
             HydraTech is a dynamic and innovative company delivering advanced
             security and technology solutions. We&apos;ve partnered with
             <strong className=" font-bold"> ETIMAD Holding</strong>, a UAE-based conglomerate
@@ -118,7 +118,7 @@ function About() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-xl">
+          <p className="mt-6 text-lg md:text-xl text-neutral-700">
             This collaboration enables HydraTech to leverage <strong className=" font-bold"> ETIMAD&apos;s </strong> 
             technologies, enhancing our capabilities in delivering top-tier
             security systems. Oversight from one of <strong className=" font-bold"> ETIMAD&apos;s </strong> General Managers

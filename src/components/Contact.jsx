@@ -175,7 +175,7 @@ function AdvancedContactForm() {
               </a>
               <div className="flex justify-center items-center gap-x-4 mt-4 text-2xl">
                 <a
-                  href="https://www.linkedin.com/company/hydratechbh/"
+                  href="https://www.linkedin.com/in/hydratech-homeland-security-w-l-l-b2866a360/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

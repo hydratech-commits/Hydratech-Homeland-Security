@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <div
-      className={`transition-all duration-300 ease-in-out ${navBg} ${navText} flex justify-between items-center mx-auto px-4 py-6 sticky top-0 w-full z-50`}
+      className={`transition-all duration-300 ease-in-out ${navBg} ${navText} flex justify-between items-center mx-auto px-4 py-3 sticky top-0 w-full z-50`}
     >
       {/* Logo */}
       <div className={`w-32 sm:w-40 cursor-pointer`}>
