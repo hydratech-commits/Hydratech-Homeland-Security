@@ -17,10 +17,10 @@ function Navbar({ closeMenu }) {
   }, []);
 
   const navItems = [
-    { label: "Home", to: "hero", offset: 250 },
-    { label: "About", to: "about", offset: 250 },
-    { label: "Our Solutions", to: "services", offset: -290 },
-    { label: "Careers", to: "careers", offset: -310 },
+    { label: "Home", to: "hero", offset: -100 },
+    { label: "About", to: "about", offset: 0 },
+    { label: "Our Solutions", to: "services", offset: -50 },
+    { label: "Careers", to: "careers", offset: 10 },
   ];
 
   return (
@@ -53,7 +53,7 @@ function Navbar({ closeMenu }) {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={30}
               duration={200}
               onClick={handleLinkClick}
               className="relative z-10 text-[#181818] px-3 py-1 cursor-pointer transition-transform duration-300 hover:scale-105"

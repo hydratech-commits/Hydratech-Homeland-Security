@@ -2,7 +2,7 @@ import fs from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
 import path from "path";
 
-const sitemap = new SitemapStream({ hostname: "https://webdev.hydratech.bh" });
+const sitemap = new SitemapStream({ hostname: "https://hydratech.bh" });
 
 const pages = [
   "/", // Main page

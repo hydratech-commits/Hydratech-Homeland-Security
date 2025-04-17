@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../App.css";
-import Reveal from "./Reveal";
 import { FaPlay, FaPause } from "react-icons/fa";
-import videoSource from "../assets/video2.mp4";
+import { motion, AnimatePresence } from "framer-motion";
+import videoSource from "../assets/Video2.mp4";
 import Logo from "../assets/Logo4.svg";
 
 function Hero() {
@@ -21,6 +21,10 @@ function Hero() {
     setIsPlaying(!isPlaying);
   };
 
+  const handleVideoEnd = () => {
+    setIsPlaying(false); // show Play button and reveal content
+  };
+
   // Fix mobile viewport height issues
   useEffect(() => {
     const setViewportHeight = () => {
@@ -34,56 +38,64 @@ function Hero() {
   }, []);
 
   return (
-    <div
-  id="hero"
-  className="relative w-full overflow-hidden h-[70vh] md:h-screen"
->
-  {/* Video Background */}
-  <video
-    ref={videoRef}
-    className="absolute top-7 left-0 bottom-[500px] w-full h-full object-fill md:object-cover z-30 opacity-80"
-    src={videoSource}
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
+    <div id="hero" className="relative w-full overflow-hidden h-[70vh] md:h-screen">
+      {/* Video Background */}
+      <video
+        ref={videoRef}
+        className={`absolute top-7 left-0 bottom-[500px] w-full h-full object-fill md:object-cover z-30 transition-opacity duration-700 ${
+          isPlaying ? "opacity-80" : "opacity-30"
+        }`}
+        
+        src={videoSource}
+        autoPlay
+        muted
+        playsInline
+        onEnded={handleVideoEnd}
+      />
 
-
-{/* Watermark blocker (visible only on small screens) */}
-<div className="absolute bottom-0 right-0 w-20 h-10 bg-black z-40 md:hidden"> <img src={Logo} alt="" className=" z-50" /></div>
-
-
-      {/* Foreground Content */}
-      <div className="relative z-30 flex flex-col justify-center items-start h-full px-6 text-[#fb5c2c]">
-        {/* Uncomment and customize if you want text */}
-        {/* 
-        <Reveal>
-          <h1 className="text-5xl md:text-6xl font-extrabold border-b-4 border-gray-500 w-fit">HYDRATECH</h1>
-        </Reveal>
-        <Reveal>
-          <h2 className="text-2xl md:text-3xl font-bold mt-4">HOMELAND SECURITY</h2>
-        </Reveal>
-        <Reveal>
-          <p className="text-lg md:text-xl mt-4 text-neutral-300 font-semibold">
-            Secure networks. <br />
-            Smarter business. <br />
-            Let us protect what matters most —{" "}
-            <span className="text-black font-bold md:text-2xl bg-[#fb5c2c] md:px-2 rounded">
-              your data
-            </span>
-          </p>
-        </Reveal>
-        */}
-
-        {/* Play/Pause Button */}
-        <button
-          onClick={handlePlayPause}
-          className="absolute bottom-6 right-6 bg-[#3c3c3b] hover:bg-[#4b4b4b] text-[#5b5b5a] p-3 rounded-full shadow-lg transition duration-300 z-40"
-        >
-          {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}
-        </button>
+      {/* Watermark blocker (small screens) */}
+      <div className="absolute bottom-0 right-0 w-20 h-10 bg-black z-40 md:hidden">
+        <img src={Logo} alt="Logo" className="z-50 w-full h-full object-contain" />
       </div>
+
+      {/* Foreground Content - Show only when not playing */}
+      <AnimatePresence>
+  {!isPlaying && (
+    <motion.div
+      className={`absolute inset-0 ${
+        !isPlaying ? "z-50" : "z-30"
+      } flex flex-col justify-center items-start px-6 text-[#fb5c2c]`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.h1 className="text-5xl md:text-6xl font-extrabold border-b-4 border-gray-500 w-fit mb-4">
+        HYDRATECH
+      </motion.h1>
+      <motion.h2 className="text-2xl md:text-3xl font-bold mb-4">
+        HOMELAND SECURITY
+      </motion.h2>
+      <motion.p className="text-lg md:text-xl text-neutral-300 font-semibold max-w-xl">
+        Secure networks. <br />
+        Smarter business. <br />
+        Let us protect what matters most —{" "}
+        <span className="text-black font-bold md:text-2xl bg-[#fb5c2c] md:px-2 rounded">
+          your data
+        </span>
+      </motion.p>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+
+      {/* Play/Pause Button */}
+      <button
+        onClick={handlePlayPause}
+        className="absolute bottom-6 right-6 bg-[#3c3c3b] hover:bg-[#4b4b4b] text-[#5b5b5a] p-3 rounded-full shadow-lg transition duration-300 z-50"
+      >
+        {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}
+      </button>
     </div>
   );
 }

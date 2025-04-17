@@ -5,7 +5,6 @@ import { ThemeProvider } from "./context/theme";
 
 // Lazy load components
 const About = lazy(() => import("./components/About"));
-const Portfolio = lazy(() => import("./components/Portfolio"));
 const Services = lazy(() => import("./components/Services"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Careers = lazy(() => import("./components/Careers"));
