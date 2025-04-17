@@ -10,12 +10,7 @@ function Footer() {
     "portfolio",
     "contact",
   ];
-  const exploreLinks = [
-    "Careers",
-    "Cybersecurity Services",
-    "Network Consulting",
-    "Penetration Testing",
-  ];
+  const exploreLinks = ["Careers", "Network Consulting"];
 
   return (
     <footer className="bg-[#4e4e52] text-[#adb3bd] py-12 px-6 md:px-20 font-semibold">
@@ -26,18 +21,18 @@ function Footer() {
             Contact Us
           </h3>
           <p className="text-sm text-[#9fa4b1] leading-6 mb-4">
-            HydraTech Homeland Security
-            <br />
-            Floor 44 Room-1 <br />
-            East tower,
-            <br />
-            Bahrain Financial Harbour,
-            <br />
-            Kingdom Of Bahrain
-            <br />
-            Phone: +973-17233339
-            <br />
-            Email: info@hydratech.bh
+            <span>
+              HydraTech Homeland Security W.L.L
+              <br />
+              Level 44, office 4401
+              <br />
+              East tower,
+              <br />
+              Bahrain Financial Harbour,
+              <br />
+              19191, Manama,
+              <br /> Kingdom Of Bahrain.
+            </span>
           </p>
           <div className="rounded overflow-hidden border border-[#6b7373] shadow-lg">
             <iframe

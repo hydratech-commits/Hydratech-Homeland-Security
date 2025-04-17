@@ -52,28 +52,31 @@ function AdvancedContactForm() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col gap-6 md:w-1/3"
+          className="flex items-start flex-col gap-6 md:w-2/3"
         >
-          <h3 className="text-[#fb5c2c] text-lg sm:text-2xl font-semibold sm:font-bold">
+          <h3 className="text-[#fb5c2c] text-lg sm:text-2xl font-semibold sm:font-bold  ">
             Contact Us
           </h3>
-          <div className="flex flex-col sm:flex-row items-start gap-x-3 justify-center text-sm text-[#9fa4b1]">
+          <div className="flex flex-col sm:flex-row items-start gap-x-3 gap-y-2 justify-center text-sm text-[#9fa4b1]">
             <div className="flex items-start gap-3">
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
                 className="text-[#fb5c2c] mt-1"
               />
               <span>
-                HydraTech Homeland Security
+                HydraTech Homeland Security W.L.L
+                <br />
+                Level 44, office 4401
                 <br />
                 East tower,
                 <br />
                 Bahrain Financial Harbour,
                 <br />
-                Kingdom Of Bahrain
+                19191, Manama,
+                <br /> Kingdom Of Bahrain.
               </span>
             </div>
-            <div className="flex items-start justify-center gap-3">
+            <div className="flex items-start justify-center gap-3 ">
               <FontAwesomeIcon icon={faPhone} className="text-[#fb5c2c]" />
               <span>+973-17233339</span>
             </div>
